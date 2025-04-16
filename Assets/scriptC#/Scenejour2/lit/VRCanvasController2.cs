@@ -58,6 +58,6 @@ public class VRCanvasController2 : MonoBehaviour
             yield return null;
         }
       
-        SceneManager.LoadScene("fin");
+        SceneManager.LoadScene("jour3");
     }
 }

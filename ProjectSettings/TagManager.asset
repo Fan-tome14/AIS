@@ -6,19 +6,10 @@ TagManager:
   tags:
   - Anchor
   - Hand
-  - CableRouge
-  - CableBleu
-  - CableVert
-  - CableViolet
-  - CableJaune
-  - socketRouge
-  - socketBleu
-  - socketVert
-  - socketViolet
-  - socketJaune
   - Asteroid
   - fuse
   - tape
+  - Casque
   layers:
   - Default
   - TransparentFX

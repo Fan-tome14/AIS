@@ -8,15 +8,25 @@ public class RedButton : MonoBehaviour
     public AudioSource audioSource2;
     public GameObject canvas;
     public EquiperCasqueVR casqueVRSCRIPT;
-    public BlackButton blackButton; // Référence au bouton noir
+    public BlackButton blackButton;
     public bool isPressed = false;
 
-    private UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabInteractable; // Changed the type
+    private UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabInteractable;
+    
     private Vector3 initialPosition;
+
+    private void Awake()
+    {
+        // Vérifie et ajoute les composants si nécessaires
+        if (GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>() == null)
+            gameObject.AddComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
+
+    }
 
     private void Start()
     {
-        grabInteractable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>(); // Corrected this line
+        grabInteractable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
+        
         initialPosition = transform.localPosition;
 
         if (grabInteractable != null)
@@ -24,72 +34,49 @@ public class RedButton : MonoBehaviour
             grabInteractable.selectEntered.AddListener(OnButtonPressed);
             grabInteractable.hoverEntered.AddListener(OnHoverEntered);
         }
-        else
-        {
-            Debug.LogError("⚠️ XRGrabInteractable manquant sur le cube !");
-        }
 
-        // Assurez-vous que le canvas est désactivé au départ
+
+
         if (canvas != null)
-        {
             canvas.SetActive(false);
-        }
     }
 
     private void OnButtonPressed(SelectEnterEventArgs args)
     {
-        isPressed = true;        
-        if (soundbutton != null)
-        {
-            soundbutton.Play();
-        }
-        else
-        {
-            Debug.LogWarning("🔇 Aucun sondbutton assigné !");
-        }
+        if (isPressed) return;
 
-        // 🔊 Lancer le son si la source audio est définie
-        if (audioSource2 != null)
-        {
-            audioSource2.Play();
-        }
-        else
-        {
-            Debug.LogWarning("🔇 Aucun audioSource2 assigné !");
-        }
+        isPressed = true;
 
-        // Afficher le canvas
-        if (canvas != null)
-        {
-            canvas.SetActive(true);
-        }
+        if (soundbutton != null) soundbutton.Play();
+        else Debug.LogWarning("🔇 Aucun soundbutton assigné !");
+
+        if (audioSource2 != null) audioSource2.Play();
+        else Debug.LogWarning("🔇 Aucun audioSource2 assigné !");
+
+        if (canvas != null) canvas.SetActive(true);
+
         StartCoroutine(AnimateButtonPress());
     }
 
     private IEnumerator AnimateButtonPress()
     {
-        // Descendre le bouton
         transform.localPosition += new Vector3(0, -0.01f, 0);
-        yield return new WaitForSeconds(0.2f); // Durée de l'appui
-        // Revenir à la position initiale
+        yield return new WaitForSeconds(0.2f);
         transform.localPosition = initialPosition;
+        
     }
+
     public void setGrabbable(bool grabbable)
     {
         if (grabInteractable != null)
         {
-            grabInteractable.enabled = grabbable;  // Assurez-vous que grabbable est un booléen
-            Debug.Log(grabbable ? "🔵 est maintenant attrapable." : "🔴 Le casque n'est plus attrapable.");
-        }
-        else
-        {
-            Debug.LogError("⚠️ XRGrabInteractable manquant sur l'objet !");
+            grabInteractable.enabled = grabbable;
+            Debug.Log(grabbable ? "🔵 est maintenant attrapable." : "🔴 Le bouton n'est plus attrapable.");
         }
     }
 
     private void OnHoverEntered(HoverEnterEventArgs args)
     {
-        // Vous pouvez ajouter des effets de survol ici
         Debug.Log("🟡 Hover sur le bouton !");
     }
 }

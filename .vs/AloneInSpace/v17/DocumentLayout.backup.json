@@ -3,6 +3,130 @@
   "WorkspaceRootPath": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\lit\\VRCanvasController2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scriptC#\\Scenejour2\\lit\\VRCanvasController2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\Button\\YellowButton3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scriptC#\\SceneJour3\\Button\\YellowButton3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Temp\\Compiled-Shader Graphs-HeatDisstortionWobble.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Temp\\Compiled-Shader Graphs-HeatDisstortionWobble.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Temp\\GeneratedFromGraph-HeatDisstortionWobble.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Temp\\GeneratedFromGraph-HeatDisstortionWobble.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour1\\Button\\GreenButton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scriptC#\\SceneJour1\\Button\\GreenButton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour1\\Button\\RedButton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scriptC#\\SceneJour1\\Button\\RedButton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\tempe\\gameController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scriptC#\\SceneJour3\\tempe\\gameController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\tempe\\ThermometerController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scriptC#\\SceneJour3\\tempe\\ThermometerController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\tempe\\PressOnSelect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scriptC#\\SceneJour3\\tempe\\PressOnSelect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\tempe\\Button3D.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scriptC#\\SceneJour3\\tempe\\Button3D.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\Button\\BlackButton3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scriptC#\\SceneJour3\\Button\\BlackButton3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\Button\\BlackButton2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scriptC#\\Scenejour2\\Button\\BlackButton2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\Button\\RedButton3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scriptC#\\SceneJour3\\Button\\RedButton3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\Button\\RedButton2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scriptC#\\Scenejour2\\Button\\RedButton2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\mission\\CheckMissions3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scriptC#\\SceneJour3\\mission\\CheckMissions3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\mission\\CheckMissions2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scriptC#\\Scenejour2\\mission\\CheckMissions2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\Casque\\EquiperCasqueVR3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scriptC#\\SceneJour3\\Casque\\EquiperCasqueVR3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\Casque\\EquiperCasqueVR2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scriptC#\\Scenejour2\\Casque\\EquiperCasqueVR2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\alarme\\AlarmSystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scriptC#\\Scenejour2\\alarme\\AlarmSystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\debut\\SceneChanged32.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scriptC#\\Scenejour2\\debut\\SceneChanged32.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\Voix-off\\VoiceOverManager3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scriptC#\\SceneJour3\\Voix-off\\VoiceOverManager3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\musicbox\\GrabMusicPlayer3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scriptC#\\SceneJour3\\musicbox\\GrabMusicPlayer3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\levier\\LevierScript3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scriptC#\\SceneJour3\\levier\\LevierScript3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\debut\\SceneChanged33.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scriptC#\\SceneJour3\\debut\\SceneChanged33.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\Voix-off\\VoiceOverManager2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scriptC#\\Scenejour2\\Voix-off\\VoiceOverManager2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\lit\\VRCanvasController3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scriptC#\\SceneJour3\\lit\\VRCanvasController3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\Button\\BlueButton3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scriptC#\\SceneJour3\\Button\\BlueButton3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\Button\\GreenButton3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scriptC#\\SceneJour3\\Button\\GreenButton3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ilyes\\Documents\\code\\AloneInSpace\\Assets\\SpawnZone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ilyes\\Documents\\code\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\AsteroidMover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ilyes\\Documents\\code\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\LaserShooter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ilyes\\Documents\\code\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\LaserProjectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\Button\\YellowButton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scriptC#\\Button\\YellowButton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -30,24 +154,407 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ThermometerController.cs",
+              "DocumentMoniker": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\tempe\\ThermometerController.cs",
+              "RelativeDocumentMoniker": "Assets\\scriptC#\\SceneJour3\\tempe\\ThermometerController.cs",
+              "ToolTip": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\tempe\\ThermometerController.cs",
+              "RelativeToolTip": "Assets\\scriptC#\\SceneJour3\\tempe\\ThermometerController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAiwCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T20:24:37.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RedButton2.cs",
+              "DocumentMoniker": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\Button\\RedButton2.cs",
+              "RelativeDocumentMoniker": "Assets\\scriptC#\\Scenejour2\\Button\\RedButton2.cs",
+              "ToolTip": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\Button\\RedButton2.cs",
+              "RelativeToolTip": "Assets\\scriptC#\\Scenejour2\\Button\\RedButton2.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAYwEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T17:40:16.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CheckMissions2.cs",
+              "DocumentMoniker": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\mission\\CheckMissions2.cs",
+              "RelativeDocumentMoniker": "Assets\\scriptC#\\Scenejour2\\mission\\CheckMissions2.cs",
+              "ToolTip": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\mission\\CheckMissions2.cs",
+              "RelativeToolTip": "Assets\\scriptC#\\Scenejour2\\mission\\CheckMissions2.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAUwGIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T17:35:08.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BlackButton3.cs",
+              "DocumentMoniker": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\Button\\BlackButton3.cs",
+              "RelativeDocumentMoniker": "Assets\\scriptC#\\SceneJour3\\Button\\BlackButton3.cs",
+              "ToolTip": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\Button\\BlackButton3.cs",
+              "RelativeToolTip": "Assets\\scriptC#\\SceneJour3\\Button\\BlackButton3.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T17:20:46.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "VoiceOverManager3.cs",
+              "DocumentMoniker": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\Voix-off\\VoiceOverManager3.cs",
+              "RelativeDocumentMoniker": "Assets\\scriptC#\\SceneJour3\\Voix-off\\VoiceOverManager3.cs",
+              "ToolTip": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\Voix-off\\VoiceOverManager3.cs",
+              "RelativeToolTip": "Assets\\scriptC#\\SceneJour3\\Voix-off\\VoiceOverManager3.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T17:25:56.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "YellowButton3.cs",
+              "DocumentMoniker": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\Button\\YellowButton3.cs",
+              "RelativeDocumentMoniker": "Assets\\scriptC#\\SceneJour3\\Button\\YellowButton3.cs",
+              "ToolTip": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\Button\\YellowButton3.cs",
+              "RelativeToolTip": "Assets\\scriptC#\\SceneJour3\\Button\\YellowButton3.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T17:20:44.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GeneratedFromGraph-HeatDisstortionWobble.shader",
+              "DocumentMoniker": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Temp\\GeneratedFromGraph-HeatDisstortionWobble.shader",
+              "RelativeDocumentMoniker": "Temp\\GeneratedFromGraph-HeatDisstortionWobble.shader",
+              "ToolTip": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Temp\\GeneratedFromGraph-HeatDisstortionWobble.shader",
+              "RelativeToolTip": "Temp\\GeneratedFromGraph-HeatDisstortionWobble.shader",
+              "ViewState": "AgIAABIKAAAAAAAAAAAQwDcKAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-12T21:23:47.483Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "VRCanvasController2.cs",
+              "DocumentMoniker": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\lit\\VRCanvasController2.cs",
+              "RelativeDocumentMoniker": "Assets\\scriptC#\\Scenejour2\\lit\\VRCanvasController2.cs",
+              "ToolTip": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\lit\\VRCanvasController2.cs",
+              "RelativeToolTip": "Assets\\scriptC#\\Scenejour2\\lit\\VRCanvasController2.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAADwAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T17:18:37.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "gameController.cs",
+              "DocumentMoniker": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\tempe\\GameController.cs",
+              "RelativeDocumentMoniker": "Assets\\scriptC#\\SceneJour3\\tempe\\GameController.cs",
+              "ToolTip": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\tempe\\GameController.cs",
+              "RelativeToolTip": "Assets\\scriptC#\\SceneJour3\\tempe\\GameController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAiwCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T20:31:40.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GreenButton.cs",
+              "DocumentMoniker": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour1\\Button\\GreenButton.cs",
+              "RelativeDocumentMoniker": "Assets\\scriptC#\\SceneJour1\\Button\\GreenButton.cs",
+              "ToolTip": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour1\\Button\\GreenButton.cs",
+              "RelativeToolTip": "Assets\\scriptC#\\SceneJour1\\Button\\GreenButton.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T15:46:54.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Compiled-Shader Graphs-HeatDisstortionWobble.shader",
+              "DocumentMoniker": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Temp\\Compiled-Shader Graphs-HeatDisstortionWobble.shader",
+              "RelativeDocumentMoniker": "Temp\\Compiled-Shader Graphs-HeatDisstortionWobble.shader",
+              "ToolTip": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Temp\\Compiled-Shader Graphs-HeatDisstortionWobble.shader",
+              "RelativeToolTip": "Temp\\Compiled-Shader Graphs-HeatDisstortionWobble.shader",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-12T21:24:41.893Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RedButton.cs",
+              "DocumentMoniker": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour1\\Button\\RedButton.cs",
+              "RelativeDocumentMoniker": "Assets\\scriptC#\\SceneJour1\\Button\\RedButton.cs",
+              "ToolTip": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour1\\Button\\RedButton.cs",
+              "RelativeToolTip": "Assets\\scriptC#\\SceneJour1\\Button\\RedButton.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T18:01:27.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BlackButton2.cs",
+              "DocumentMoniker": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\Button\\BlackButton2.cs",
+              "RelativeDocumentMoniker": "Assets\\scriptC#\\Scenejour2\\Button\\BlackButton2.cs",
+              "ToolTip": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\Button\\BlackButton2.cs",
+              "RelativeToolTip": "Assets\\scriptC#\\Scenejour2\\Button\\BlackButton2.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAUwFIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T17:41:40.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Button3D.cs",
+              "DocumentMoniker": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\tempe\\Button3D.cs",
+              "RelativeDocumentMoniker": "Assets\\scriptC#\\SceneJour3\\tempe\\Button3D.cs",
+              "ToolTip": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\tempe\\Button3D.cs",
+              "RelativeToolTip": "Assets\\scriptC#\\SceneJour3\\tempe\\Button3D.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T21:09:37.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PressOnSelect.cs",
+              "DocumentMoniker": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\tempe\\PressOnSelect.cs",
+              "RelativeDocumentMoniker": "Assets\\scriptC#\\SceneJour3\\tempe\\PressOnSelect.cs",
+              "ToolTip": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\tempe\\PressOnSelect.cs",
+              "RelativeToolTip": "Assets\\scriptC#\\SceneJour3\\tempe\\PressOnSelect.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T21:14:38.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "GrabMusicPlayer3.cs",
+              "DocumentMoniker": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\musicbox\\GrabMusicPlayer3.cs",
+              "RelativeDocumentMoniker": "Assets\\scriptC#\\SceneJour3\\musicbox\\GrabMusicPlayer3.cs",
+              "ToolTip": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\musicbox\\GrabMusicPlayer3.cs",
+              "RelativeToolTip": "Assets\\scriptC#\\SceneJour3\\musicbox\\GrabMusicPlayer3.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T17:24:14.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CheckMissions3.cs",
+              "DocumentMoniker": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\mission\\CheckMissions3.cs",
+              "RelativeDocumentMoniker": "Assets\\scriptC#\\SceneJour3\\mission\\CheckMissions3.cs",
+              "ToolTip": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\mission\\CheckMissions3.cs",
+              "RelativeToolTip": "Assets\\scriptC#\\SceneJour3\\mission\\CheckMissions3.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T17:23:56.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "LevierScript3.cs",
+              "DocumentMoniker": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\levier\\LevierScript3.cs",
+              "RelativeDocumentMoniker": "Assets\\scriptC#\\SceneJour3\\levier\\LevierScript3.cs",
+              "ToolTip": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\levier\\LevierScript3.cs",
+              "RelativeToolTip": "Assets\\scriptC#\\SceneJour3\\levier\\LevierScript3.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T17:23:24.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RedButton3.cs",
+              "DocumentMoniker": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\Button\\RedButton3.cs",
+              "RelativeDocumentMoniker": "Assets\\scriptC#\\SceneJour3\\Button\\RedButton3.cs",
+              "ToolTip": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\Button\\RedButton3.cs",
+              "RelativeToolTip": "Assets\\scriptC#\\SceneJour3\\Button\\RedButton3.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T17:20:45.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SceneChanged32.cs",
+              "DocumentMoniker": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\debut\\SceneChanged32.cs",
+              "RelativeDocumentMoniker": "Assets\\scriptC#\\Scenejour2\\debut\\SceneChanged32.cs",
+              "ToolTip": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\debut\\SceneChanged32.cs",
+              "RelativeToolTip": "Assets\\scriptC#\\Scenejour2\\debut\\SceneChanged32.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T17:27:26.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EquiperCasqueVR2.cs",
+              "DocumentMoniker": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\Casque\\EquiperCasqueVR2.cs",
+              "RelativeDocumentMoniker": "Assets\\scriptC#\\Scenejour2\\Casque\\EquiperCasqueVR2.cs",
+              "ToolTip": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\Casque\\EquiperCasqueVR2.cs",
+              "RelativeToolTip": "Assets\\scriptC#\\Scenejour2\\Casque\\EquiperCasqueVR2.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAUwEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T17:31:45.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "VoiceOverManager2.cs",
+              "DocumentMoniker": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\Voix-off\\VoiceOverManager2.cs",
+              "RelativeDocumentMoniker": "Assets\\scriptC#\\Scenejour2\\Voix-off\\VoiceOverManager2.cs",
+              "ToolTip": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\Voix-off\\VoiceOverManager2.cs",
+              "RelativeToolTip": "Assets\\scriptC#\\Scenejour2\\Voix-off\\VoiceOverManager2.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T17:22:25.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "EquiperCasqueVR3.cs",
+              "DocumentMoniker": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\Casque\\EquiperCasqueVR3.cs",
+              "RelativeDocumentMoniker": "Assets\\scriptC#\\SceneJour3\\Casque\\EquiperCasqueVR3.cs",
+              "ToolTip": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\Casque\\EquiperCasqueVR3.cs",
+              "RelativeToolTip": "Assets\\scriptC#\\SceneJour3\\Casque\\EquiperCasqueVR3.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T17:21:54.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AlarmSystem.cs",
+              "DocumentMoniker": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\alarme\\AlarmSystem.cs",
+              "RelativeDocumentMoniker": "Assets\\scriptC#\\Scenejour2\\alarme\\AlarmSystem.cs",
+              "ToolTip": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\alarme\\AlarmSystem.cs",
+              "RelativeToolTip": "Assets\\scriptC#\\Scenejour2\\alarme\\AlarmSystem.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T17:28:59.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "SceneChanged33.cs",
+              "DocumentMoniker": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\debut\\SceneChanged33.cs",
+              "RelativeDocumentMoniker": "Assets\\scriptC#\\SceneJour3\\debut\\SceneChanged33.cs",
+              "ToolTip": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\debut\\SceneChanged33.cs",
+              "RelativeToolTip": "Assets\\scriptC#\\SceneJour3\\debut\\SceneChanged33.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T17:22:09.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "BlueButton3.cs",
+              "DocumentMoniker": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\Button\\BlueButton3.cs",
+              "RelativeDocumentMoniker": "Assets\\scriptC#\\SceneJour3\\Button\\BlueButton3.cs",
+              "ToolTip": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\Button\\BlueButton3.cs",
+              "RelativeToolTip": "Assets\\scriptC#\\SceneJour3\\Button\\BlueButton3.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T17:20:46.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "GreenButton3.cs",
+              "DocumentMoniker": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\Button\\GreenButton3.cs",
+              "RelativeDocumentMoniker": "Assets\\scriptC#\\SceneJour3\\Button\\GreenButton3.cs",
+              "ToolTip": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\Button\\GreenButton3.cs",
+              "RelativeToolTip": "Assets\\scriptC#\\SceneJour3\\Button\\GreenButton3.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T17:20:42.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "VRCanvasController3.cs",
+              "DocumentMoniker": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\lit\\VRCanvasController3.cs",
+              "RelativeDocumentMoniker": "Assets\\scriptC#\\SceneJour3\\lit\\VRCanvasController3.cs",
+              "ToolTip": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\SceneJour3\\lit\\VRCanvasController3.cs",
+              "RelativeToolTip": "Assets\\scriptC#\\SceneJour3\\lit\\VRCanvasController3.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T17:18:56.013Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "LaserProjectile.cs",
+              "DocumentMoniker": "C:\\Users\\Ilyes\\Documents\\code\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\LaserProjectile.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Users\\Ilyes\\Documents\\code\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\LaserProjectile.cs",
+              "ToolTip": "C:\\Users\\Ilyes\\Documents\\code\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\LaserProjectile.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Users\\Ilyes\\Documents\\code\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\LaserProjectile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T01:55:37.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "LaserShooter.cs",
+              "DocumentMoniker": "C:\\Users\\Ilyes\\Documents\\code\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\LaserShooter.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Users\\Ilyes\\Documents\\code\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\LaserShooter.cs",
+              "ToolTip": "C:\\Users\\Ilyes\\Documents\\code\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\LaserShooter.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Users\\Ilyes\\Documents\\code\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\LaserShooter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T01:55:12.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AsteroidMover.cs",
+              "DocumentMoniker": "C:\\Users\\Ilyes\\Documents\\code\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\AsteroidMover.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Users\\Ilyes\\Documents\\code\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\AsteroidMover.cs",
+              "ToolTip": "C:\\Users\\Ilyes\\Documents\\code\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\AsteroidMover.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Users\\Ilyes\\Documents\\code\\AloneInSpace\\Assets\\scriptC#\\Scenejour2\\AsteroidMover.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T01:54:02.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "SpawnZone.cs",
+              "DocumentMoniker": "C:\\Users\\Ilyes\\Documents\\code\\AloneInSpace\\Assets\\SpawnZone.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Users\\Ilyes\\Documents\\code\\AloneInSpace\\Assets\\SpawnZone.cs",
+              "ToolTip": "C:\\Users\\Ilyes\\Documents\\code\\AloneInSpace\\Assets\\SpawnZone.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Users\\Ilyes\\Documents\\code\\AloneInSpace\\Assets\\SpawnZone.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T01:53:09.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
               "Title": "YellowButton.cs",
               "DocumentMoniker": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\Button\\YellowButton.cs",
               "RelativeDocumentMoniker": "Assets\\scriptC#\\Button\\YellowButton.cs",
               "ToolTip": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\Button\\YellowButton.cs",
               "RelativeToolTip": "Assets\\scriptC#\\Button\\YellowButton.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T03:37:37.376Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-05T03:37:37.376Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 33,
               "Title": "BlueButton.cs",
               "DocumentMoniker": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\Button\\BlueButton.cs",
               "RelativeDocumentMoniker": "Assets\\scriptC#\\Button\\BlueButton.cs",
@@ -55,12 +562,11 @@
               "RelativeToolTip": "Assets\\scriptC#\\Button\\BlueButton.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T03:37:04.498Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-05T03:37:04.498Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 34,
               "Title": "GreenButton.cs",
               "DocumentMoniker": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\Button\\GreenButton.cs",
               "RelativeDocumentMoniker": "Assets\\scriptC#\\Button\\GreenButton.cs",
@@ -68,12 +574,11 @@
               "RelativeToolTip": "Assets\\scriptC#\\Button\\GreenButton.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAUwDwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T03:35:43.37Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-05T03:35:43.37Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 35,
               "Title": "BlackButton.cs",
               "DocumentMoniker": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\Button\\BlackButton.cs",
               "RelativeDocumentMoniker": "Assets\\scriptC#\\Button\\BlackButton.cs",
@@ -81,12 +586,11 @@
               "RelativeToolTip": "Assets\\scriptC#\\Button\\BlackButton.cs",
               "ViewState": "AgIAAB8AAAAAAAAAAAAUwEYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T03:35:08.528Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-05T03:35:08.528Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 36,
               "Title": "RedButton.cs",
               "DocumentMoniker": "C:\\Documents\\cour IUT\\BUT2\\S4\\realite_virtuelle_et_environnements_immersifs\\AloneInSpace\\Assets\\scriptC#\\Button\\RedButton.cs",
               "RelativeDocumentMoniker": "Assets\\scriptC#\\Button\\RedButton.cs",
@@ -94,8 +598,7 @@
               "RelativeToolTip": "Assets\\scriptC#\\Button\\RedButton.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAUwFQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T03:33:52.244Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-05T03:33:52.244Z"
             }
           ]
         }

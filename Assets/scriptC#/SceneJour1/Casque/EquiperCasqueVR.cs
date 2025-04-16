@@ -14,6 +14,7 @@ public class EquiperCasqueVR : MonoBehaviour
     private bool estEquipe = false;
     private bool aEquiperLecasque = false;
     private bool aReposer = false;
+    private int nbFois = 0; // Compteur pour le nombre de fois que le casque a été repositionné
 
     public bool AEteEquipe { get { return aEquiperLecasque; } private set { aEquiperLecasque = value; } }
     public bool AEteRepose { get { return aReposer; } private set { aReposer = value; } }
@@ -45,12 +46,13 @@ public class EquiperCasqueVR : MonoBehaviour
 
         if (!estEquipe)
         {
+            nbFois++;
             Debug.Log("🎧 Casque équipé !");
             transform.SetParent(pointAttach);
             transform.localPosition = Vector3.zero;
             transform.localRotation = Quaternion.identity;
             estEquipe = true;
-            grabInteractable.enabled = false; 
+            //grabInteractable.enabled = false; 
             AEteEquipe = true;
 
             if (sonCasqueEquipe != null)
@@ -59,6 +61,11 @@ public class EquiperCasqueVR : MonoBehaviour
             }
             Debug.Log("etat du casque : " + AEteEquipe);
             scriptCheckMissions.ValiderMissions();
+        }else if(nbFois%2==0)
+        {
+            nbFois++;
+            Debug.Log("🔄 Tentative de repositionnement du casque...");
+            transform.SetParent(null);
         }
     }
 
