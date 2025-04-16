@@ -4,15 +4,12 @@ using UnityEngine.UI;
 public class GameController : MonoBehaviour
 {
     public ThermometerController[] thermometers;
-    public AudioClip successClip; // Son à jouer quand total == 21
-    private AudioSource audioSource;
+    public AudioSource successSound; // 🔊 Son à jouer quand c’est vert
 
-    private bool hasPlayedSound = false;
+    private bool hasPlayedSound = false; // Pour ne pas jouer le son plusieurs fois
 
     private void Start()
     {
-        audioSource = GetComponent<AudioSource>();
-
         // Tous les fonds commencent rouges
         foreach (var thermo in thermometers)
         {
@@ -36,9 +33,9 @@ public class GameController : MonoBehaviour
 
         Debug.Log("🌡️ Température totale : " + total);
 
-        Color targetColor = (total == 21) ? Color.green : Color.red;
+        bool shouldBeGreen = (total == 21);
+        Color targetColor = shouldBeGreen ? Color.green : Color.red;
 
-        // Met à jour chaque fond d’image
         foreach (var thermo in thermometers)
         {
             if (thermo.backgroundImage != null)
@@ -47,18 +44,18 @@ public class GameController : MonoBehaviour
             }
         }
 
-        // Jouer le son si la température est 21 et qu'on ne l’a pas déjà joué
-        if (total == 21 && !hasPlayedSound)
+        // 🎵 Joue le son quand ça devient vert
+        if (shouldBeGreen && !hasPlayedSound)
         {
-            if (audioSource != null && successClip != null)
+            if (successSound != null)
             {
-                audioSource.PlayOneShot(successClip);
-                hasPlayedSound = true;
+                successSound.Play();
             }
+            hasPlayedSound = true;
         }
-        else if (total != 21)
+        else if (!shouldBeGreen)
         {
-            hasPlayedSound = false;
+            hasPlayedSound = false; // Reset pour rejouer plus tard
         }
     }
 }
