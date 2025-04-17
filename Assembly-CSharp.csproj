@@ -75,6 +75,7 @@
     <Compile Include="Assets\scriptC#\SceneJour1\Casque\TriggerReposer.cs" />
     <Compile Include="Assets\scriptC#\Scenejour2\Button\BlueButton2.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\XRPokeFollowAffordanceFill.cs" />
+    <Compile Include="Assets\scriptC#\SceneJour3\solar\RepairZone.cs" />
     <Compile Include="Assets\UnityTechnologies\ParticlePack\EffectExamples\Misc Effects\Scripts\SpawnEffect.cs" />
     <Compile Include="Assets\scriptC#\Scenejour2\musicbox\GrabMusicPlayer2.cs" />
     <Compile Include="Assets\scriptC#\Scenejour2\Button\GreenButton2.cs" />
@@ -88,7 +89,6 @@
     <Compile Include="Assets\scriptC#\SceneJour1\debut\SceneChanged3.cs" />
     <Compile Include="Assets\scriptC#\SceneJour3\levier\LevierScript3.cs" />
     <Compile Include="Assets\scriptC#\SceneDEBUT\AloneInSpace-titre\HideTitle.cs" />
-    <Compile Include="Assets\scriptC#\SceneJour3\ChestInteraction.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\BezierCurve.cs" />
     <Compile Include="Assets\scriptC#\SceneJour1\Button\BlackButton.cs" />
     <Compile Include="Assets\UnityTechnologies\ParticlePack\Shared\Scripts\ProximityActivate.cs" />
@@ -119,6 +119,7 @@
     <Compile Include="Assets\scriptC#\Scenejour2\AsteroidEvent\AsteroidMover.cs" />
     <Compile Include="Assets\scriptC#\SceneJour1\Button\YellowButton.cs" />
     <Compile Include="Assets\scriptC#\SceneFin\AudioSequence.cs" />
+    <Compile Include="Assets\scriptC#\SceneJour3\solar\SolarPanelRepairManager.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\Callout.cs" />
     <Compile Include="Assets\scriptC#\SceneJour1\musicbox\GrabMusicPlayer.cs" />
     <Compile Include="Assets\scriptC#\SceneJour1\Button\GreenButton.cs" />

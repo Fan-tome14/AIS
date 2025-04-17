@@ -10,6 +10,8 @@ TagManager:
   - fuse
   - tape
   - Casque
+  - Tournevis
+  - Open
   layers:
   - Default
   - TransparentFX
