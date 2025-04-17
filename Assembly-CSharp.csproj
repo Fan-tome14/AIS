@@ -88,6 +88,7 @@
     <Compile Include="Assets\scriptC#\SceneJour1\debut\SceneChanged3.cs" />
     <Compile Include="Assets\scriptC#\SceneJour3\levier\LevierScript3.cs" />
     <Compile Include="Assets\scriptC#\SceneDEBUT\AloneInSpace-titre\HideTitle.cs" />
+    <Compile Include="Assets\scriptC#\SceneJour3\ChestInteraction.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\BezierCurve.cs" />
     <Compile Include="Assets\scriptC#\SceneJour1\Button\BlackButton.cs" />
     <Compile Include="Assets\UnityTechnologies\ParticlePack\Shared\Scripts\ProximityActivate.cs" />
