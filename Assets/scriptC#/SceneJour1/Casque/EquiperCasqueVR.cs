@@ -14,7 +14,6 @@ public class EquiperCasqueVR : MonoBehaviour
     private bool estEquipe = false;
     private bool aEquiperLecasque = false;
     private bool aReposer = false;
-    private int nbFois = 0; // Compteur pour le nombre de fois que le casque a été repositionné
 
     public bool AEteEquipe { get { return aEquiperLecasque; } private set { aEquiperLecasque = value; } }
     public bool AEteRepose { get { return aReposer; } private set { aReposer = value; } }
@@ -22,52 +21,50 @@ public class EquiperCasqueVR : MonoBehaviour
     private void Start()
     {
         grabInteractable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
-        //setGrabbable(false);  // Désactiver le grab interactable au départ
-        
-        if (grabInteractable != null)
-        {
-            grabInteractable.selectExited.AddListener(EquiperCasqueSurTete);
-        }
-        else
-        {
-            Debug.LogError("⚠️ XRGrabInteractable manquant sur le casque !");
-        }
+        grabInteractable.selectEntered.AddListener(OnGrab);
     }
 
-    private void EquiperCasqueSurTete(SelectExitEventArgs args)
+    private void OnGrab(SelectEnterEventArgs args)
+    {
+        transform.SetParent(null); // Le casque n'a plus de parent
+        Debug.Log("👋 Casque attrapé, détaché de son parent.");
+    }
+
+
+    public void EquiperManuellement()
     {
         if (redButton != null && !redButton.isPressed)
         {
             VoixTrigger.Play();
             RepositionnerCasqueError();
-            Debug.Log("🔊 Voix déclenchée !");
+            Debug.Log("🔊 Voix déclenchée (équiper manuel bloqué) !");
             return;
         }
 
-        if (!estEquipe)
-        {
-            nbFois++;
-            Debug.Log("🎧 Casque équipé !");
+            Debug.Log("🎧 Casque équipé via Trigger !");
+            CancelGrab(); // Annule le grab si le casque est déjà en cours de manipulation
             transform.SetParent(pointAttach);
             transform.localPosition = Vector3.zero;
             transform.localRotation = Quaternion.identity;
             estEquipe = true;
-            //grabInteractable.enabled = false; 
             AEteEquipe = true;
 
             if (sonCasqueEquipe != null)
             {
                 sonCasqueEquipe.Play();
             }
-            Debug.Log("etat du casque : " + AEteEquipe);
+
             scriptCheckMissions.ValiderMissions();
-        }else if(nbFois%2==0)
-        {
-            nbFois++;
-            Debug.Log("🔄 Tentative de repositionnement du casque...");
-            transform.SetParent(null);
-        }
+
     }
+    private void CancelGrab()
+    {
+        grabInteractable.enabled = false; // Désactive le grab interactable pour éviter les conflits
+        grabInteractable.enabled = true; // Réactive le grab interactable après l'équipement
+        Debug.Log("❌ Grab annulé pour éviter les conflits !");
+    }
+
+
 
     public void RepositionnerCasque()
     {
@@ -75,6 +72,7 @@ public class EquiperCasqueVR : MonoBehaviour
 
         if (estEquipe)
         {
+            CancelGrab(); // Annule le grab si le casque est déjà en cours de manipulation
             Debug.Log("📌 Casque repositionné sur le socle !");
             estEquipe = false;
             aReposer = true;  // Le casque a été reposé

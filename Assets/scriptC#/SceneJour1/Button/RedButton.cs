@@ -54,17 +54,8 @@ public class RedButton : MonoBehaviour
         else Debug.LogWarning("🔇 Aucun audioSource2 assigné !");
 
         if (canvas != null) canvas.SetActive(true);
-
-        StartCoroutine(AnimateButtonPress());
     }
 
-    private IEnumerator AnimateButtonPress()
-    {
-        transform.localPosition += new Vector3(0, -0.01f, 0);
-        yield return new WaitForSeconds(0.2f);
-        transform.localPosition = initialPosition;
-        
-    }
 
     public void setGrabbable(bool grabbable)
     {

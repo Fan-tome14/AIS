@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class TriggerReposer : MonoBehaviour
+public class TriggerEquiper : MonoBehaviour
 {
     public EquiperCasqueVR casque; // Référence au casque
 
@@ -8,7 +8,9 @@ public class TriggerReposer : MonoBehaviour
     {
         if (other.CompareTag("Casque"))
         {
-            casque.RepositionnerCasque(); // Appel propre
+            casque.EquiperManuellement(); // Appel propre
         }
     }
+
+
 }
