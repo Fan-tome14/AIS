@@ -15,9 +15,8 @@ public class VRCanvasController : MonoBehaviour
     public float darkDuration = 3f;
     public AudioSource pasPret;
     public AudioSource audioSource;
-    public AudioSource alarmAudioSource; // 🔊 Alarme
     public List<Light> alarmLights; // 💡 Lumières rouges d'alarme
-    public RedButton redButton;
+    public CheckMissionsGlobal checkMissions;
 
     private Coroutine alarmCoroutine;
 
@@ -25,17 +24,6 @@ public class VRCanvasController : MonoBehaviour
 
     void Start()
     {
-        interactable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
-        if (interactable != null)
-        {
-            interactable.selectEntered.AddListener(OnGrab);
-            Debug.Log("Listener ajouté à l'objet interactable.");
-        }
-        else
-        {
-            Debug.LogError("L'objet ne possède pas de XRGrabInteractable.");
-        }
-
         messageText.gameObject.SetActive(false);
 
         // Assurez-vous que les lumières d'alarme sont éteintes au début
@@ -45,9 +33,8 @@ public class VRCanvasController : MonoBehaviour
         }
     }
 
-    void OnGrab(SelectEnterEventArgs args)
-    {
-        if (!CheckMissions.finishedday)
+    public void finishDay(){
+        if (!CheckMissionsGlobal.finishedday)
         {
             Debug.Log("🚫 La journée n'est pas encore terminée !");
             pasPret.Play();
@@ -73,6 +60,6 @@ public class VRCanvasController : MonoBehaviour
         numjours++;
         messageText.text = "Jour " + numjours;
         messageText.gameObject.SetActive(true);
-        SceneManager.LoadScene("jour2");
+        SceneManager.LoadScene("jour" + numjours);
     }
 }

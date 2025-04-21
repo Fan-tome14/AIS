@@ -8,7 +8,7 @@ public class EquiperCasqueVR : MonoBehaviour
     public AudioSource sonCasqueEquipe; // Son lorsqu'on met le casque
     public RedButton redButton; // Référence au script RedButton
     public AudioSource VoixTrigger;
-    public CheckMissions  scriptCheckMissions; // Référence au script CheckMissions
+    public CheckMissionsGlobal  scriptCheckMissions; // Référence au script CheckMissions
 
     private UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabInteractable;
     private bool estEquipe = false;
