@@ -10,7 +10,7 @@ public class GreenButton2 : MonoBehaviour
     public MiseEnCommunFuite scriptMiseEnCommunFuite; // Référence au script de mise en commun de fuite
     public AlarmSystem alarmSystem; // Référence au script de l'alarme
     public AudioSource VoixTrigger; // Référence à la source audio
-    public CheckMissions2 scriptCheckMissions; // Référence au script CheckMissions
+    public CheckMissionsGlobal scriptCheckMissions; // Référence au script CheckMissions
     private bool alarme = false;  // Détermine si le vaisseau doit bouger ou non
     public bool estActiver { get { return alarme; } private set { alarme = value; } }
 

@@ -5,21 +5,20 @@ public class TriggerFuite2 : MonoBehaviour
     public AudioSource steamSound; // Référence à la source audio de la fuite de vapeur
     public bool isTriggered = false;
     public GameObject PressurisedSteam;
-    public GameObject Tape1;
-    public GameObject groundFog1;
-    public GameObject groundFog2;
+    public GameObject Tape;
+    public GameObject groundFog;
     public AudioSource VoixTrigger;
-    public RedButton2 redButton; // Référence au script RedButton
+    public AfficheMission AfficheMission;
 
     void Start()
     {
-        Tape1.SetActive(false); // Assurez-vous que le GameObject "tape" est désactivé au départ
+        Tape.SetActive(false); // Assurez-vous que le GameObject "tape" est désactivé au départ
         PressurisedSteam.SetActive(true); // Assurez-vous que la fuite de vapeur est activée au départ
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (redButton != null && !redButton.isPressed)
+        if (AfficheMission != null && !AfficheMission.isPressed)
         {
             VoixTrigger.Play();
             Debug.Log("🔊 Voix déclenchée !");
@@ -27,9 +26,8 @@ public class TriggerFuite2 : MonoBehaviour
         }
         if (other.CompareTag("tape"))
         {
-            groundFog1.SetActive(false); // Désactiver le brouillard au sol 1
-            groundFog2.SetActive(false); // Désactiver le brouillard au sol 2
-            Tape1.SetActive(true); // Désactiver le GameObject "tape"
+            groundFog.SetActive(false); // Désactiver le brouillard au sol 1
+            Tape.SetActive(true); // Désactiver le GameObject "tape"
             steamSound.Stop(); // Arrêter le son de la fuite de vapeur
             PressurisedSteam.SetActive(false); // Désactiver la fuite de vapeur
             isTriggered = true; // Marquer le déclencheur comme activé

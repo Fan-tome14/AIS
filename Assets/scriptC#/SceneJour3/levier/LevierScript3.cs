@@ -7,7 +7,7 @@ public class LevierScript3 : MonoBehaviour
     public AudioSource soundbutton;
     public GameObject targetObject; // Le GameObject que vous voulez déplacer (votre vaisseau)
     public float moveSpeed = 3f;    // Vitesse de déplacement
-    public RedButton redButton; // Référence au script RedButton
+    public AfficheMission AfficheMission; // Référence au script RedButton
     public AudioSource VoixTrigger;
     public CheckMissions scriptCheckMissions; // Référence au script CheckMissions
 
@@ -42,7 +42,7 @@ public class LevierScript3 : MonoBehaviour
 
     private void OnButtonPressed(SelectEnterEventArgs args)
     {
-        if(redButton != null && !redButton.isPressed)
+        if(AfficheMission != null && !AfficheMission.isPressed)
         {
             VoixTrigger.Play();
             return;

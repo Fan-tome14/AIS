@@ -6,11 +6,6 @@ public class MiseEnCommun : MonoBehaviour
     public PositionningFusible positionningFusible; // Référence au script PositionningFusible
     public GameObject ElectricalSparks;
     public bool Check=false; // Variable pour vérifier si les deux fusibles sont positionnés
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()

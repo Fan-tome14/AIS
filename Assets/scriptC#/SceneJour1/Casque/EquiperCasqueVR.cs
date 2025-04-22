@@ -6,7 +6,7 @@ public class EquiperCasqueVR : MonoBehaviour
     public Transform pointAttach; // Tête du joueur
     public Transform socleCasque; // Socle où replacer le casque
     public AudioSource sonCasqueEquipe; // Son lorsqu'on met le casque
-    public RedButton redButton; // Référence au script RedButton
+    public AfficheMission AfficheMission; // Référence au script RedButton
     public AudioSource VoixTrigger;
     public CheckMissionsGlobal  scriptCheckMissions; // Référence au script CheckMissions
 
@@ -33,7 +33,7 @@ public class EquiperCasqueVR : MonoBehaviour
 
     public void EquiperManuellement()
     {
-        if (redButton != null && !redButton.isPressed)
+        if (AfficheMission != null && !AfficheMission.isPressed)
         {
             VoixTrigger.Play();
             RepositionnerCasqueError();

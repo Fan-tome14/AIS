@@ -2,10 +2,11 @@ using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using System.Collections;
 
-public class TV_Remote : MonoBehaviour
+public class AfficheMission : MonoBehaviour
 {
     public AudioSource audioSource2;
     public GameObject canvas;
+    public EquiperCasqueVR casqueVRSCRIPT;
     public bool isPressed = false;
 
     private UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabInteractable;
@@ -41,7 +42,13 @@ public class TV_Remote : MonoBehaviour
     private void OnButtonPressed(SelectEnterEventArgs args)
     {
         if (isPressed) return;
+
         isPressed = true;
+
+
+        if (audioSource2 != null) audioSource2.Play();
+        else Debug.LogWarning("🔇 Aucun audioSource2 assigné !");
+
         if (canvas != null) canvas.SetActive(true);
     }
 

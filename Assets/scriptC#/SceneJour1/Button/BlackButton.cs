@@ -6,7 +6,7 @@ public class BlackButton : MonoBehaviour
 {
     public EquiperCasqueVR casque; // Référence au casque
     public AudioSource audioSource; // Référence au son à jouer
-    public RedButton redButton; // Référence au bouton rouge
+    public AfficheMission AfficheMission; // Référence au bouton rouge
     public AudioSource VoixTrigger; // Référence au son de la voix à jouer
 
     private UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabInteractable;
@@ -29,7 +29,7 @@ public class BlackButton : MonoBehaviour
 
     private void OnButtonPressed(SelectEnterEventArgs args)
     {
-        if (redButton != null && !redButton.isPressed)
+        if (AfficheMission != null && !AfficheMission.isPressed)
         {
             VoixTrigger.Play();
             return;
