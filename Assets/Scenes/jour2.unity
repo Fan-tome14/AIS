@@ -14381,6 +14381,7 @@ GameObject:
   - component: {fileID: 791854610}
   - component: {fileID: 791854609}
   - component: {fileID: 791854608}
+  - component: {fileID: 791854611}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -14469,9 +14470,17 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1730070959
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!222 &791854611
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791854606}
+  m_CullTransparentMesh: 1
 --- !u!64 &792518781
 MeshCollider:
   m_ObjectHideFlags: 0
