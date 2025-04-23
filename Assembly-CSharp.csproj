@@ -60,14 +60,17 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.42f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\scriptC#\SceneJour1\Casque\TriggerEquiper.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\PermissionsManager.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\VideoPlayerRenderTexture.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\Rotator.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\XRKnob.cs" />
+    <Compile Include="Assets\scriptC#\SceneJour1\lit\TriggerLit.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\BooleanToggleVisualsController.cs" />
     <Compile Include="Assets\scriptC#\Scenejour2\Voix-off\VoiceOverManager2.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\RayAttachModifier.cs" />
     <Compile Include="Assets\scriptC#\SceneJour3\Button\YellowButton3.cs" />
+    <Compile Include="Assets\scriptC#\Mission\CheckMissions2.cs" />
     <Compile Include="Assets\scriptC#\SceneJour3\tempe\GameController.cs" />
     <Compile Include="Assets\scriptC#\Scenejour2\fusible\PositionningFusible.cs" />
     <Compile Include="Assets\scriptC#\SceneDEBUT\portal\ButtonPressVR.cs" />
@@ -81,6 +84,7 @@
     <Compile Include="Assets\scriptC#\Scenejour2\Button\GreenButton2.cs" />
     <Compile Include="Assets\scriptC#\SceneJour1\lit\VRCanvasController.cs" />
     <Compile Include="Assets\scriptC#\Scenejour2\FuiteTuyaux\TriggerFuite1.cs" />
+    <Compile Include="Assets\scriptC#\general\AfficheMission.cs" />
     <Compile Include="Assets\scriptC#\Scenejour2\alarme\AlarmSystem.cs" />
     <Compile Include="Assets\scriptC#\Scenejour2\Button\RedButton2.cs" />
     <Compile Include="Assets\scriptC#\SceneJour3\mission\CheckMissions3.cs" />
@@ -95,11 +99,13 @@
     <Compile Include="Assets\VRTemplateAssets\Scripts\LaunchProjectile.cs" />
     <Compile Include="Assets\scriptC#\Scenejour2\fusible\PositionningFusible2.cs" />
     <Compile Include="Assets\scriptC#\SceneJour3\lit\VRCanvasController3.cs" />
+    <Compile Include="Assets\scriptC#\Mission\CheckMissionGlobal.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\HandSubsystemManager.cs" />
     <Compile Include="Assets\scriptC#\Scenejour2\Button\YellowButton2.cs" />
     <Compile Include="Assets\scriptC#\Scenejour2\lit\VRCanvasController2.cs" />
     <Compile Include="Assets\scriptC#\Scenejour2\FuiteTuyaux\TriggerFuite2.cs" />
     <Compile Include="Assets\UnityTechnologies\ParticlePack\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\scriptC#\Mission\CheckMissions.cs" />
     <Compile Include="Assets\scriptC#\Scenejour2\AsteroidEvent\SpawnZone.cs" />
     <Compile Include="Assets\scriptC#\Scenejour2\debut\SceneChanged32.cs" />
     <Compile Include="Assets\scriptC#\SceneJour3\Button\RedButton3.cs" />
@@ -109,10 +115,10 @@
     <Compile Include="Assets\scriptC#\SceneJour1\levier\LevierScript.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\VideoTimeScrubControl.cs" />
     <Compile Include="Assets\UnityTechnologies\ParticlePack\Shared\Ramps\Runtime\RampAsset.cs" />
-    <Compile Include="Assets\scriptC#\Scenejour2\mission\CheckMissions2.cs" />
     <Compile Include="Assets\UnityTechnologies\ParticlePack\Shared\Scripts\AdjustTimeScale.cs" />
     <Compile Include="Assets\scriptC#\SceneJour3\tempe\Button3D.cs" />
     <Compile Include="Assets\UnityTechnologies\ParticlePack\Shared\Scripts\SimpleCameraController.cs" />
+    <Compile Include="Assets\scriptC#\Scenejour2\FuiteTuyaux\TriggerFuite3.cs" />
     <Compile Include="Assets\UnityTechnologies\ParticlePack\Shared\Scripts\SimpleCharacterMotor.cs" />
     <Compile Include="Assets\scriptC#\SceneJour3\Button\BlackButton3.cs" />
     <Compile Include="Assets\scriptC#\SceneJour3\tempe\PressOnSelect.cs" />
@@ -143,7 +149,6 @@
     <Compile Include="Assets\scriptC#\SceneJour1\Voix-off\VoiceOverManager.cs" />
     <Compile Include="Assets\scriptC#\SceneDECOLLAGE\decollage\SceneChanged2.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\AnchorVisuals.cs" />
-    <Compile Include="Assets\scriptC#\SceneJour1\mission\CheckMissions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
