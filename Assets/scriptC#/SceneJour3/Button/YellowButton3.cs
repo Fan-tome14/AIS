@@ -1,125 +1,52 @@
 ﻿using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using System.Collections;
-using System.Collections.Generic;
 
 public class YellowButton3 : MonoBehaviour
 {
-    public AudioSource soundbutton;
-    public AudioSource casqueNonEquipeSound;
-    public EquiperCasqueVR3 casqueVR;
+    public Transform porte; // Glisse la porte ici depuis l'inspecteur
 
     private UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabInteractable;
-    private Vector3 initialPosition;
 
-    public List<GameObject> objectsToLift;
-    private Dictionary<GameObject, Vector3> originalPositions = new Dictionary<GameObject, Vector3>();
-
-    public float liftHeight = 2.5f;
-    public float liftDuration = 3f;
-
-    private bool objetsLeves = false;
+    private Vector3 positionCible = new Vector3(0f, 1.729f, -1.442f);
+    private Quaternion rotationCible = Quaternion.Euler(-50f, 0f, 0f);
 
     private void Start()
     {
         grabInteractable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
-        initialPosition = transform.localPosition;
+        grabInteractable.selectEntered.AddListener(OnGrab);
+    }
 
-        foreach (GameObject obj in objectsToLift)
+    private void OnGrab(SelectEnterEventArgs args)
+    {
+        if (porte != null)
         {
-            if (obj != null)
-            {
-                originalPositions[obj] = obj.transform.position;
-            }
-        }
-
-        if (grabInteractable != null)
-        {
-            grabInteractable.selectEntered.AddListener(OnButtonPressed);
-            grabInteractable.hoverEntered.AddListener(OnHoverEntered);
-        }
-        else
-        {
-            Debug.LogError("⚠️ XRGrabInteractable manquant sur le bouton !");
+            Debug.Log("Grab détecté ! Démarrage de l'ouverture animée...");
+            StartCoroutine(TransitionPorte());
         }
     }
 
-    private void OnButtonPressed(SelectEnterEventArgs args)
+    private IEnumerator TransitionPorte()
     {
-        if (casqueVR != null && casqueVR.estEquipe)
-        {
-            Debug.Log("🟢 Casque équipé ✅ - Bouton pressé.");
+        Vector3 startPosition = porte.localPosition;
+        Quaternion startRotation = porte.localRotation;
 
-            if (soundbutton != null)
-                soundbutton.Play();
-
-            StartCoroutine(AnimateButtonPress());
-
-            if (!objetsLeves)
-                LiftObjectsSmoothly();
-            else
-                LowerObjectsSmoothly();
-
-            objetsLeves = !objetsLeves;
-        }
-        else
-        {
-            Debug.LogWarning("❌ Casque non équipé - action bloquée.");
-
-            if (casqueNonEquipeSound != null)
-                casqueNonEquipeSound.Play();
-            else
-                Debug.LogWarning("🔇 Aucun son d'erreur assigné !");
-        }
-    }
-
-    private void LiftObjectsSmoothly()
-    {
-        foreach (GameObject obj in objectsToLift)
-        {
-            if (obj != null)
-            {
-                Vector3 targetPos = originalPositions[obj] + new Vector3(0, liftHeight, 0);
-                StartCoroutine(SmoothMove(obj, obj.transform.position, targetPos));
-            }
-        }
-    }
-
-    private void LowerObjectsSmoothly()
-    {
-        foreach (GameObject obj in objectsToLift)
-        {
-            if (obj != null && originalPositions.ContainsKey(obj))
-            {
-                StartCoroutine(SmoothMove(obj, obj.transform.position, originalPositions[obj]));
-            }
-        }
-    }
-
-    private IEnumerator SmoothMove(GameObject obj, Vector3 startPos, Vector3 endPos)
-    {
+        float duration = 3f;
         float elapsed = 0f;
 
-        while (elapsed < liftDuration)
+        while (elapsed < duration)
         {
-            float t = elapsed / liftDuration;
-            obj.transform.position = Vector3.Lerp(startPos, endPos, t);
+            float t = elapsed / duration;
+
+            porte.localPosition = Vector3.Lerp(startPosition, positionCible, t);
+            porte.localRotation = Quaternion.Lerp(startRotation, rotationCible, t);
+
             elapsed += Time.deltaTime;
             yield return null;
         }
 
-        obj.transform.position = endPos;
-    }
-
-    private IEnumerator AnimateButtonPress()
-    {
-        transform.localPosition += new Vector3(0, -0.01f, 0);
-        yield return new WaitForSeconds(0.2f);
-        transform.localPosition = initialPosition;
-    }
-
-    private void OnHoverEntered(HoverEnterEventArgs args)
-    {
-        Debug.Log("🟡 Hover sur le bouton !");
+        // Assure qu'on termine exactement à la position/rotation cible
+        porte.localPosition = positionCible;
+        porte.localRotation = rotationCible;
     }
 }
