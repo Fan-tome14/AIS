@@ -13,7 +13,8 @@ public class VRCanvasController2 : MonoBehaviour
     public float darkDuration = 3f;
     public AudioSource pasPret;
     public AudioSource audioSource;
-    public RedButton2 redButton;
+    public CheckMissionsGlobal CheckMissionsGlobal; // Référence au script CheckMissions
+
 
     private UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable interactable;
 
@@ -35,7 +36,7 @@ public class VRCanvasController2 : MonoBehaviour
 
     void OnGrab(SelectEnterEventArgs args)
     {
-        if (!CheckMissions2.finishedday)
+        if (!CheckMissionsGlobal.finishedday)
         {
             Debug.Log("🚫 La journée n'est pas encore terminée !");
             pasPret.Play();

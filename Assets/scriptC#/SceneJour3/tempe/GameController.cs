@@ -6,7 +6,7 @@ public class GameController : MonoBehaviour
     public ThermometerController[] thermometers;
     public AudioSource successSound; // 🔊 Son à jouer quand c’est vert
 
-    private bool hasPlayedSound = false; // Pour ne pas jouer le son plusieurs fois
+    public bool hasPlayedSound = false; // Pour ne pas jouer le son plusieurs fois
 
     private void Start()
     {

@@ -11,7 +11,7 @@ public class EquiperCasqueVR : MonoBehaviour
     public CheckMissionsGlobal  scriptCheckMissions; // Référence au script CheckMissions
 
     private UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabInteractable;
-    private bool estEquipe = false;
+    public bool estEquipe = false;
     private bool aEquiperLecasque = false;
     private bool aReposer = false;
 

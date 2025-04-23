@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class TriggerFuite1 : MonoBehaviour
 {
+    public AudioSource steamSound; // Référence à la source audio de la fuite de vapeur
     public bool isTriggered = false;
     public GameObject PressurisedSteam;
-    public AudioSource steamSound; // Référence à la source audio de la fuite de vapeur
-    public GameObject Tape; // Référence au GameObject "tape"
+    public GameObject Tape; 
     public GameObject groundFog;
-    public AfficheMission AfficheMission;
     public AudioSource VoixTrigger;
+    public AfficheMission AfficheMission;
 
     void Start()
     {

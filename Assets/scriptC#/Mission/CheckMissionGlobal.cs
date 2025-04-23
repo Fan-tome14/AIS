@@ -24,6 +24,10 @@ public class CheckMissionsGlobal : MonoBehaviour
     public MiseEnCommun scriptMiseEnCommun;
     public GreenButton2 scriptButtonGreen;
 
+    //Jour 3
+    public CommunPanneauSolaire CommunPanneauSolaire;
+    public GameController GameController;
+
     public static bool finishedday = false;
     public static bool dejaValider = false;
 
@@ -45,6 +49,11 @@ public class CheckMissionsGlobal : MonoBehaviour
             missionsJour[0].text = "Reparer les fuites de vapeur";
             missionsJour[1].text = "Retrouver les fusibles";
             missionsJour[2].text = "Eteindre l alarme";
+        }else if(VRCanvasController.numjours == 3)
+        {
+            missionsJour[0].text = "Régler la température du vaisseau";
+            missionsJour[1].text = "Viser les boulons des 4 plaques en dehors du vaisseau";
+            missionsJour[2].text = "Clouter la plaque sur le rover en dehors du vaisseau";
         }
 
         // Affecter les textes aux checkmarks
@@ -78,8 +87,11 @@ public class CheckMissionsGlobal : MonoBehaviour
             m1 = scriptMiseEnCommunFuite.Check;
             m2 = scriptMiseEnCommun.Check;
             m3 = scriptButtonGreen.estActiver;
+        }else if(VRCanvasController.numjours == 3 && CommunPanneauSolaire != null && GameController != null)
+        {
+            m1 = GameController.hasPlayedSound;
+            m2 = CommunPanneauSolaire.isRepaired;
         }
-
         if (m1) monCheckMark1.isOn = true;
         if (m2) monCheckMark2.isOn = true;
         if (m3) monCheckMark3.isOn = true;

@@ -6,7 +6,7 @@ public class EquiperCasqueVR3 : MonoBehaviour
     public Transform pointAttach; // Tête du joueur
     public Transform socleCasque; // Socle où replacer le casque
     public AudioSource sonCasqueEquipe; // Son lorsqu'on met le casque
-    public RedButton2 redButton; // Référence au script RedButton
+    public AfficheMission AfficheMission; // Référence au script RedButton
     public AudioSource VoixTrigger;
 
     private UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabInteractable;
