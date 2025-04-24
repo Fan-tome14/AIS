@@ -2,12 +2,15 @@
 using UnityEngine.XR.Interaction.Toolkit;
 using System.Collections;
 
-public class YellowButton3 : MonoBehaviour
+public class YellowButton : MonoBehaviour
 {
     public Transform porte; // Glisse la porte ici depuis l'inspecteur
+    public EquiperCasqueVR scriptCasqueVR; // Référence au script EquiperCasqueVR
+    public AudioSource VoixTrigger; // Son de la porte
+
 
     private UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabInteractable;
-
+    
     private Vector3 positionCible = new Vector3(0f, 1.729f, -1.442f);
     private Quaternion rotationCible = Quaternion.Euler(-50f, 0f, 0f);
 
@@ -19,6 +22,11 @@ public class YellowButton3 : MonoBehaviour
 
     private void OnGrab(SelectEnterEventArgs args)
     {
+        if (scriptCasqueVR != null && !scriptCasqueVR.estEquipe)
+        {
+            VoixTrigger.Play();
+            return;
+        }
         if (porte != null)
         {
             Debug.Log("Grab détecté ! Démarrage de l'ouverture animée...");
