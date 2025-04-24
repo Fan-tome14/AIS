@@ -30623,7 +30623,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.117, y: 0, z: 0.437}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0.6}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 947835818}
@@ -44400,7 +44400,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7545296495857058877, guid: c77fa25e8b7cdd145a3108ffcfc7ba37, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 12.899977
+      value: 12.096
       objectReference: {fileID: 0}
     - target: {fileID: 7545296495857058877, guid: c77fa25e8b7cdd145a3108ffcfc7ba37, type: 3}
       propertyPath: m_LocalRotation.w
@@ -44576,6 +44576,7 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: 0}
+  canShoot: 0
 --- !u!4 &1661983720 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7545296495857058877, guid: c77fa25e8b7cdd145a3108ffcfc7ba37, type: 3}
@@ -51508,6 +51509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundbutton: {fileID: 0}
   scriptMiseEnCommunFuite: {fileID: 863176715}
+  scriptMiseEnCommun: {fileID: 2078068430}
   alarmSystem: {fileID: 449693585}
   VoixTrigger: {fileID: 2080216154}
   scriptCheckMissions: {fileID: 1146560877}

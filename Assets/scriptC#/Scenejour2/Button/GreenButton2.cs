@@ -7,6 +7,7 @@ public class GreenButton2 : MonoBehaviour
     public AudioSource soundbutton;
     private UnityEngine.XR.Interaction.Toolkit.Interactables.XRSimpleInteractable buttonInteractable;
     public MiseEnCommunFuite scriptMiseEnCommunFuite;
+    public MiseEnCommun scriptMiseEnCommun;
     public AlarmSystem alarmSystem;
     public AudioSource VoixTrigger;
     public CheckMissionsGlobal scriptCheckMissions;
@@ -31,7 +32,7 @@ public class GreenButton2 : MonoBehaviour
 
     private void OnButtonPressed(SelectEnterEventArgs args)
     {
-        if (scriptMiseEnCommunFuite != null && !scriptMiseEnCommunFuite.Check)
+        if (scriptMiseEnCommunFuite != null && !scriptMiseEnCommunFuite.Check && scriptMiseEnCommun != null && !scriptMiseEnCommun.Check)
         {
             VoixTrigger.Play();
             Debug.Log("🔴 Alarme déjà désactivée !");
