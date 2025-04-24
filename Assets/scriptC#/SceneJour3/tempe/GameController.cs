@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class GameController : MonoBehaviour
 {
     public ThermometerController[] thermometers;
+    public CheckMissionsGlobal CheckMissionsGlobal; // Référence au script de vérification des missions
     public AudioSource successSound; // 🔊 Son à jouer quand c’est vert
 
     public bool hasPlayedSound = false; // Pour ne pas jouer le son plusieurs fois
@@ -42,6 +43,10 @@ public class GameController : MonoBehaviour
             {
                 thermo.backgroundImage.color = targetColor;
             }
+        }
+        if(!shouldBeGreen)
+        {
+            CheckMissionsGlobal.monCheckMark1.isOn = false;
         }
 
         // 🎵 Joue le son quand ça devient vert

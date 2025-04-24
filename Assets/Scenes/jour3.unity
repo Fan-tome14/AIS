@@ -45045,8 +45045,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   porte: {fileID: 382112134}
-  scriptCasqueVR: {fileID: 0}
-  VoixTrigger: {fileID: 0}
+  scriptCasqueVR: {fileID: 2048544237}
+  VoixTrigger: {fileID: 1655958298}
 --- !u!65 &1655958300
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46623,7 +46623,7 @@ Transform:
   m_GameObject: {fileID: 1745356888}
   serializedVersion: 2
   m_LocalRotation: {x: -1.1641532e-10, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.3064, y: -0.0524, z: -0.254}
+  m_LocalPosition: {x: -0.3363, y: -0.0524, z: -0.254}
   m_LocalScale: {x: 0.20000002, y: 0.20000002, z: 0.20000002}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -46649,6 +46649,7 @@ MonoBehaviour:
   - {fileID: 342561976}
   - {fileID: 1979764695}
   - {fileID: 202809237}
+  CheckMissionsGlobal: {fileID: 1346360090}
   successSound: {fileID: 1745356891}
   hasPlayedSound: 0
 --- !u!82 &1745356891

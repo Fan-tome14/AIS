@@ -36,7 +36,6 @@ public class CheckMissionsGlobal : MonoBehaviour
         // Réinitialisation à chaque jour
         finishedday = false;
         dejaValider = false;
-        VRCanvasController.numjours = 3; // Pour le test, on force le jour 3
         // Init missions selon le jour
         if (VRCanvasController.numjours == 1)
         {
