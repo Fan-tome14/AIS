@@ -12,6 +12,9 @@ TagManager:
   - Casque
   - Tournevis
   - Open
+  - marteau
+  - visenew
+  - fan
   layers:
   - Default
   - TransparentFX
