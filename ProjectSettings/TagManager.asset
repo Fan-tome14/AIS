@@ -15,6 +15,7 @@ TagManager:
   - marteau
   - visenew
   - fan
+  - pince
   layers:
   - Default
   - TransparentFX
