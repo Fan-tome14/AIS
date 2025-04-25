@@ -70,6 +70,7 @@
     <Compile Include="Assets\scriptC#\SceneJour3\tempe\GameController.cs" />
     <Compile Include="Assets\scriptC#\Scenejour2\fusible\PositionningFusible.cs" />
     <Compile Include="Assets\scriptC#\SceneDEBUT\portal\ButtonPressVR.cs" />
+    <Compile Include="Assets\scriptC#\SceneJour3\ClouManager.cs" />
     <Compile Include="Assets\scriptC#\Scenejour2\FuiteTuyaux\MiseEnCommunFuite.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\XRPokeFollowAffordanceFill.cs" />
     <Compile Include="Assets\scriptC#\SceneJour3\solar\RepairZone.cs" />
@@ -82,6 +83,7 @@
     <Compile Include="Assets\scriptC#\general\Casque\TriggerReposer.cs" />
     <Compile Include="Assets\scriptC#\SceneDECOLLAGE\decollage\RocketAutoLaunch.cs" />
     <Compile Include="Assets\scriptC#\SceneDEBUT\AloneInSpace-titre\HideTitle.cs" />
+    <Compile Include="Assets\scriptC#\SceneJour3\Clou3.cs" />
     <Compile Include="Assets\scriptC#\general\Casque\TriggerEquiper.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\BezierCurve.cs" />
     <Compile Include="Assets\UnityTechnologies\ParticlePack\Shared\Scripts\ProximityActivate.cs" />
@@ -95,6 +97,7 @@
     <Compile Include="Assets\VRTemplateAssets\Scripts\DestroyObject.cs" />
     <Compile Include="Assets\scriptC#\SceneJour1\levier\LevierScript.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\VideoTimeScrubControl.cs" />
+    <Compile Include="Assets\scriptC#\SceneJour3\zone.cs" />
     <Compile Include="Assets\UnityTechnologies\ParticlePack\Shared\Ramps\Runtime\RampAsset.cs" />
     <Compile Include="Assets\UnityTechnologies\ParticlePack\Shared\Scripts\AdjustTimeScale.cs" />
     <Compile Include="Assets\scriptC#\SceneJour3\tempe\Button3D.cs" />
@@ -107,6 +110,7 @@
     <Compile Include="Assets\scriptC#\SceneJour3\solar\SolarPanelRepairManager.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\Callout.cs" />
     <Compile Include="Assets\scriptC#\SceneDEBUT\portal\SceneChanger.cs" />
+    <Compile Include="Assets\scriptC#\SceneJour3\cloue2.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\CalloutGazeController.cs" />
     <Compile Include="Assets\scriptC#\SceneJour1\debut\SceneChanged.cs" />
     <Compile Include="Assets\scriptC#\general\lit\TriggerLit.cs" />

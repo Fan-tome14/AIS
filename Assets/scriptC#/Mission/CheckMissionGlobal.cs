@@ -27,6 +27,7 @@ public class CheckMissionsGlobal : MonoBehaviour
     //Jour 3
     public CommunPanneauSolaire CommunPanneauSolaire;
     public GameController GameController;
+    public ClouManager ClouManager;
 
     public static bool finishedday = false;
     public static bool dejaValider = false;
@@ -50,9 +51,9 @@ public class CheckMissionsGlobal : MonoBehaviour
             missionsJour[2].text = "Eteindre l alarme";
         }else if(VRCanvasController.numjours == 3)
         {
-            missionsJour[0].text = "Régler la température du vaisseau";
+            missionsJour[0].text = "Régler la température du vaisseau dans la salle des machines";
             missionsJour[1].text = "Viser les boulons des 4 plaques en dehors du vaisseau";
-            missionsJour[2].text = "Clouter la plaque sur le rover en dehors du vaisseau";
+            missionsJour[2].text = "Changer le ventilateur du téléscope par le nouveau";
         }
 
         // Affecter les textes aux checkmarks
@@ -90,6 +91,7 @@ public class CheckMissionsGlobal : MonoBehaviour
         {
             m1 = GameController.hasPlayedSound;
             m2 = CommunPanneauSolaire.isRepaired;
+            m3 = ClouManager.isDone;
         }
         if (m1) monCheckMark1.isOn = true;
         if (m2) monCheckMark2.isOn = true;

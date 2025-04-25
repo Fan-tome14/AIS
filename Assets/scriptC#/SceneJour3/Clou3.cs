@@ -1,0 +1,24 @@
+using UnityEngine;
+
+public class Clou3 : MonoBehaviour
+{
+    public ClouManager ClouManager;
+    public int coupsRestants = 3;
+    public float enfoncementParCoup = 0.01f;
+    public bool estFini = false;
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("marteau") && coupsRestants > 0)
+        {
+            coupsRestants--;
+            transform.position -= new Vector3(enfoncementParCoup, 0, 0);
+
+            if (coupsRestants == 0 && !estFini)
+            {
+                estFini = true;
+                ClouManager.CheckClou();
+            }
+        }
+    }
+}
