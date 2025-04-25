@@ -7,9 +7,9 @@ public class Clou3 : MonoBehaviour
     public float enfoncementParCoup = 0.01f;
     public bool estFini = false;
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("marteau") && coupsRestants > 0)
+        if (other.CompareTag("marteau") && coupsRestants > 0)
         {
             coupsRestants--;
             transform.position -= new Vector3(enfoncementParCoup, 0, 0);

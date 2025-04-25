@@ -1,34 +1,32 @@
 using UnityEngine;
 
-public class cloue2 : MonoBehaviour
+public class zoneCloue : MonoBehaviour
 {
     public Transform positionFinale;
-    public bool enPosition = false; // Variable pour savoir si le fusible est positionné
-    private int max = 0;
+    public bool enPosition = false; 
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("visenew"))
         {
-            if (max == 1)
-            {
-                return;
-            }
-            // Repositionne le fusible
-            max++;
             other.transform.position = positionFinale.position;
             other.transform.rotation = positionFinale.rotation;
-            enPosition = true; // Met à jour l'état du fusible
+            enPosition = true; 
             var grabInteractable = other.GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
             if (grabInteractable != null)
             {
                 grabInteractable.enabled = false;
             }
             var rb = other.GetComponent<Rigidbody>();
+            var BoxCollider = other.GetComponent<BoxCollider>();
             if (rb != null)
             {
                 rb.isKinematic = true;
                 rb.useGravity = false;
+            }
+            if (BoxCollider != null)
+            {
+                BoxCollider.isTrigger = true;
             }
         }
     }

@@ -52,7 +52,7 @@ public class CheckMissionsGlobal : MonoBehaviour
         }else if(VRCanvasController.numjours == 3)
         {
             missionsJour[0].text = "Régler la température du vaisseau dans la salle des machines";
-            missionsJour[1].text = "Viser les boulons des 4 plaques en dehors du vaisseau";
+            missionsJour[1].text = "Viser les boulons des 4 plaques en dehors du vaisseau  ("+CommunPanneauSolaire.repairedCount+"/4)";
             missionsJour[2].text = "Changer le ventilateur du téléscope par le nouveau";
         }
 
@@ -69,6 +69,13 @@ public class CheckMissionsGlobal : MonoBehaviour
 
     void Update()
     {
+        if (VRCanvasController.numjours == 3 && CommunPanneauSolaire != null)
+        {
+            CommunPanneauSolaire.CheckPanneauSolaire(); // Met à jour repairedCount
+            string missionText = "Viser les boulons des 4 plaques en dehors du vaisseau  (" + CommunPanneauSolaire.repairedCount + "/4)";
+            missionsJour[1].text = missionText;
+            texteCheckMark2.text = missionText;
+        }
         if (!dejaValider) ValiderMissions();
     }
 
