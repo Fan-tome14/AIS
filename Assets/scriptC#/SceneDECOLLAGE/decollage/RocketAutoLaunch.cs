@@ -2,11 +2,15 @@
 
 public class RocketAutoLaunch : MonoBehaviour
 {
-    public Rigidbody rocketRigidbody;  // Assigner le Rigidbody de la fusée
-    public float launchForce = 1500f;   // Force de lancement pour reculer
-    public float delayBeforeLaunch = 15f;  // Délai avant le décollage
-    public AudioSource launchAudio;  // Son de lancement
-    public ParticleSystem launchEffect;  // Effet de particules
+    public Rigidbody rocketRigidbody;     // Assigner le Rigidbody de la fusée
+    public float accelerationRate = 50f; // Taux d'accélération (force par seconde)
+    public float launchDuration = 5f;    // Durée pendant laquelle la force est appliquée
+    public float delayBeforeLaunch = 2f;  // Délai avant le décollage
+    public AudioSource launchAudio;      // Son de lancement
+    public ParticleSystem launchEffect;   // Effet de particules
+
+    private float launchStartTime;
+    private bool isLaunching = false;
 
     void Start()
     {
@@ -29,16 +33,17 @@ public class RocketAutoLaunch : MonoBehaviour
         }
 
         // Geler la fusée au départ
+        rocketRigidbody.isKinematic = true;
         rocketRigidbody.linearVelocity = Vector3.zero;
         rocketRigidbody.angularVelocity = Vector3.zero;
 
-        // Lancer la fusée après un délai
-        Invoke("LaunchRocket", delayBeforeLaunch);
+        // Planifier le démarrage du lancement
+        Invoke("StartLaunchSequence", delayBeforeLaunch);
     }
 
-    void LaunchRocket()
+    void StartLaunchSequence()
     {
-        Debug.Log("Décollage... !");
+        Debug.Log("Préparation au décollage... !");
 
         // Jouer le son de lancement
         if (launchAudio != null)
@@ -62,9 +67,22 @@ public class RocketAutoLaunch : MonoBehaviour
 
         // Assurer que la fusée n'est plus en mode cinématique
         rocketRigidbody.isKinematic = false;
+        isLaunching = true;
+        launchStartTime = Time.time;
+    }
 
-        // Appliquer la force de lancement
-        Vector3 launchDirection = transform.forward;
-        rocketRigidbody.AddForce(launchDirection * launchForce, ForceMode.Impulse);
+    void FixedUpdate()
+    {
+        if (isLaunching && Time.time < launchStartTime + launchDuration)
+        {
+            // Appliquer une force continue vers l'avant
+            Vector3 thrustDirection = transform.forward;
+            rocketRigidbody.AddForce(thrustDirection * accelerationRate, ForceMode.Force);
+        }
+        else if (isLaunching)
+        {
+            isLaunching = false;
+            Debug.Log("Accélération terminée.");
+        }
     }
 }
