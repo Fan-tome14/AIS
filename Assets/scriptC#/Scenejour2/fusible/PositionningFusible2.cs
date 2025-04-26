@@ -17,7 +17,7 @@ public class PositionningFusible2 : MonoBehaviour
         }
         if (other.CompareTag("fuse"))
         {
-            enPosition = true;
+            enPosition = true;// Met à jour l'état du fusible
             // Repositionne le fusible
             other.transform.position = positionFinale.position;
             other.transform.rotation = positionFinale.rotation;

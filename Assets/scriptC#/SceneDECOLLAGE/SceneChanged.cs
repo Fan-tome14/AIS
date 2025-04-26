@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class SceneChanged3 : MonoBehaviour
+public class SceneChanged : MonoBehaviour
 {
     public Image fadeImage; // Image noire pour l'effet de fondu
     public float fadeDuration = 2f; // Durée du fondu

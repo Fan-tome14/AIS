@@ -20,7 +20,5 @@ public class CommunPanneauSolaire : MonoBehaviour
         if (scriptSolarPanelRepairManager4.isRepaired) repairedCount++;
 
         isRepaired = (repairedCount == 4); // Tous réparés ?
-        
-        Debug.Log("🔧 Nombre de panneaux réparés : " + repairedCount);
     }
 }

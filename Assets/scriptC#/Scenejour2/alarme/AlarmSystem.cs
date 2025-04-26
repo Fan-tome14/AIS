@@ -10,7 +10,7 @@ public class AlarmSystem : MonoBehaviour
     public float blinkSpeed = 0.5f; // Vitesse du clignotement des lumières
     private bool isAlarmActive = false;
 
-    public GreenButton2 buttonScript; // Référence au script du bouton
+    public GreenButton buttonScript; // Référence au script du bouton
     private Coroutine blinkCoroutine;
 
     private void Start()

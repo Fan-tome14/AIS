@@ -7,7 +7,6 @@ public class MiseEnCommun : MonoBehaviour
     public GameObject ElectricalSparks;
     public bool Check=false; // Variable pour vérifier si les deux fusibles sont positionnés
 
-    // Update is called once per frame
     void Update()
     {
         if(positionningFusible2.enPosition && positionningFusible.enPosition)

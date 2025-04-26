@@ -7647,7 +7647,7 @@ Transform:
   m_GameObject: {fileID: 339223553}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.117, y: 0, z: 0.437}
+  m_LocalPosition: {x: 2.117, y: -0, z: 0.353}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7672,7 +7672,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.2, y: 0.38, z: 1}
+  m_Size: {x: 0.2, y: 0.38, z: 0.52}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!82 &339223556
 AudioSource:
@@ -15605,7 +15605,7 @@ Transform:
   m_GameObject: {fileID: 749878451}
   serializedVersion: 2
   m_LocalRotation: {x: -1.1641532e-10, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.334, y: -0.054, z: -0.254}
+  m_LocalPosition: {x: -0.3346, y: -0.0524, z: -0.2539}
   m_LocalScale: {x: 0.20000002, y: 0.20000002, z: 0.20000002}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -20996,7 +20996,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1043363700}
   - component: {fileID: 1043363699}
-  - component: {fileID: 1043363701}
   m_Layer: 0
   m_Name: Voix-Off
   m_TagString: Untagged
@@ -21014,8 +21013,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f0e08c7684e6f1947a6867c16608ee04, type: 3}
-  m_Resource: {fileID: 8300000, guid: f0e08c7684e6f1947a6867c16608ee04, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0e12f695a7fe16349a767e0c976454c8, type: 3}
+  m_Resource: {fileID: 8300000, guid: 0e12f695a7fe16349a767e0c976454c8, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -21113,31 +21112,9 @@ Transform:
   m_LocalPosition: {x: 0.01110206, y: 3.5079691, z: 1.2599236}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1812620617}
+  m_Children: []
   m_Father: {fileID: 182333971}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1043363701
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1043363698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f919e9b58a26f304981972d636690f26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioSource: {fileID: 1043363699}
-  dialogueText: {fileID: 0}
-  message: "Syst\xE8me IA Activ\xE9...\r\n\r\nBienvenue \xE0 bord du vaisseau F2-33
-    ! Je suis votre intelligence artificielle de bord.\r\n\r\nVous \xEAtes dans une
-    navette de classe Stellarion pour analyser les plan\xE8tes et leurs myst\xE8res.\r\n\r\nPour
-    d\xE9buter, Appuyer sur le bouton rouge pour commencer vos mission quotidienne.\r\n"
-  delayBeforeStart: 1
-  wordsPerChunk: 5
-  fadeOutDuration: 2
 --- !u!1 &1044142059 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1876319903030084411, guid: ffd4e9c491924494a83874c4a5b69c1e, type: 3}
@@ -23545,33 +23522,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!1 &1168311933 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -8885539827088483541, guid: ffd4e9c491924494a83874c4a5b69c1e, type: 3}
-  m_PrefabInstance: {fileID: 1819937909}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &1168311937
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1168311933}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -1173257167285198723, guid: ffd4e9c491924494a83874c4a5b69c1e, type: 3}
 --- !u!1 &1174664592 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5162201237262546333, guid: ffd4e9c491924494a83874c4a5b69c1e, type: 3}
@@ -26891,6 +26841,7 @@ MonoBehaviour:
   scriptButtonGreen: {fileID: 0}
   CommunPanneauSolaire: {fileID: 0}
   GameController: {fileID: 0}
+  ClouManager: {fileID: 0}
 --- !u!1 &1318468020 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2721057819314596919, guid: ffd4e9c491924494a83874c4a5b69c1e, type: 3}
@@ -27242,8 +27193,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e772f67b26f9b834ea8fa5f67af1454b, type: 3}
-  m_Resource: {fileID: 8300000, guid: e772f67b26f9b834ea8fa5f67af1454b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7d8a0c8d4fee39b4d99b791adb7f1257, type: 3}
+  m_Resource: {fileID: 8300000, guid: 7d8a0c8d4fee39b4d99b791adb7f1257, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -29307,7 +29258,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fee974eaab3e3ba408ac86d9429cbaa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource2: {fileID: 1812620618}
   canvas: {fileID: 1697044648}
   casqueVRSCRIPT: {fileID: 736382210}
   isPressed: 0
@@ -32397,7 +32347,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 22
+  m_text: 7
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -33505,7 +33455,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 22
+  m_text: 7
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -37114,135 +37064,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!1 &1812620616
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1812620617}
-  - component: {fileID: 1812620618}
-  m_Layer: 0
-  m_Name: voix-off2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1812620617
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1812620616}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.0032447851, y: 0.9997159, z: 0.00082943134, w: 0.023597337}
-  m_LocalPosition: {x: 55.3732, y: 489.8656, z: -790.17957}
-  m_LocalScale: {x: 0.19999996, y: 0.19999997, z: 0.19999996}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1043363700}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &1812620618
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1812620616}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b3942d8d69a57524eb5f507716bff93b, type: 3}
-  m_Resource: {fileID: 8300000, guid: b3942d8d69a57524eb5f507716bff93b, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &1813790839 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7371106649126510315, guid: ffd4e9c491924494a83874c4a5b69c1e, type: 3}
@@ -38059,6 +37880,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 8953498546025746499, guid: ffd4e9c491924494a83874c4a5b69c1e, type: 3}
+    - {fileID: -8885539827088483541, guid: ffd4e9c491924494a83874c4a5b69c1e, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ffd4e9c491924494a83874c4a5b69c1e, type: 3}
@@ -41007,9 +40829,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5928807969927194588, guid: ffd4e9c491924494a83874c4a5b69c1e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2091686283}
-    - targetCorrespondingSourceObject: {fileID: -8885539827088483541, guid: ffd4e9c491924494a83874c4a5b69c1e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1168311937}
     - targetCorrespondingSourceObject: {fileID: 1964601337540781086, guid: ffd4e9c491924494a83874c4a5b69c1e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1971713820}
@@ -47084,7 +46903,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 22
+  m_text: 7
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

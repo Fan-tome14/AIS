@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class ThermometerController : MonoBehaviour
 {
     public TextMeshProUGUI tempDisplay;
-    public Image backgroundImage; // 👉 Image de fond du Canvas
+    public Image backgroundImage; 
     public int currentTemp = 30;
     public int minTemp = 0;
     public int maxTemp = 30;

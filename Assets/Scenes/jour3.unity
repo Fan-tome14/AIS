@@ -1602,7 +1602,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fee974eaab3e3ba408ac86d9429cbaa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource2: {fileID: 0}
   canvas: {fileID: 677708407}
   casqueVRSCRIPT: {fileID: 2048544237}
   isPressed: 0
@@ -55392,8 +55391,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e772f67b26f9b834ea8fa5f67af1454b, type: 3}
-  m_Resource: {fileID: 8300000, guid: e772f67b26f9b834ea8fa5f67af1454b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7d8a0c8d4fee39b4d99b791adb7f1257, type: 3}
+  m_Resource: {fileID: 8300000, guid: 7d8a0c8d4fee39b4d99b791adb7f1257, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

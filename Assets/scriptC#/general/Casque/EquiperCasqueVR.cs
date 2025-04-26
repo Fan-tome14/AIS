@@ -33,12 +33,14 @@ public class EquiperCasqueVR : MonoBehaviour
 
     public void EquiperManuellement()
     {
-        if (AfficheMission != null && !AfficheMission.isPressed)
-        {
-            VoixTrigger.Play();
-            RepositionnerCasqueError();
-            Debug.Log("🔊 Voix déclenchée (équiper manuel bloqué) !");
-            return;
+        if(VRCanvasController.numjours == 1){
+            if (AfficheMission != null && !AfficheMission.isPressed)
+            {
+                VoixTrigger.Play();
+                RepositionnerCasqueError();
+                Debug.Log("🔊 Voix déclenchée (équiper manuel bloqué) !");
+                return;
+            }
         }
 
             Debug.Log("🎧 Casque équipé via Trigger !");

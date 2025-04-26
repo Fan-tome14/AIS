@@ -9,8 +9,8 @@ public class Clou : MonoBehaviour
     {
         if (other.CompareTag("pince"))
         {
-            OnClouEnleve?.Invoke(); // prévient que ce clou est enlevé
-            Destroy(gameObject); // on enlève le clou
+            OnClouEnleve?.Invoke(); // previent que le clou a Ã©tÃ© enelevÃ©
+            Destroy(gameObject); // on enlÃ©ve le clou
         }
     }
 }

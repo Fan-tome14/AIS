@@ -2,12 +2,12 @@
 
 public class RocketAutoLaunch : MonoBehaviour
 {
-    public Rigidbody rocketRigidbody;     // Assigner le Rigidbody de la fusée
+    public Rigidbody rocketRigidbody;     
     public float accelerationRate = 50f; // Taux d'accélération (force par seconde)
     public float launchDuration = 5f;    // Durée pendant laquelle la force est appliquée
     public float delayBeforeLaunch = 2f;  // Délai avant le décollage
-    public AudioSource launchAudio;      // Son de lancement
-    public ParticleSystem launchEffect;   // Effet de particules
+    public AudioSource launchAudio;      
+    public ParticleSystem launchEffect;  
 
     private float launchStartTime;
     private bool isLaunching = false;
@@ -33,6 +33,7 @@ public class RocketAutoLaunch : MonoBehaviour
         }
 
         // Geler la fusée au départ
+        rocketRigidbody.useGravity = false; // Désactiver la gravité
         rocketRigidbody.isKinematic = true;
         rocketRigidbody.linearVelocity = Vector3.zero;
         rocketRigidbody.angularVelocity = Vector3.zero;
@@ -66,6 +67,7 @@ public class RocketAutoLaunch : MonoBehaviour
         }
 
         // Assurer que la fusée n'est plus en mode cinématique
+        rocketRigidbody.useGravity = true; // Réactiver la gravité
         rocketRigidbody.isKinematic = false;
         isLaunching = true;
         launchStartTime = Time.time;
@@ -82,7 +84,7 @@ public class RocketAutoLaunch : MonoBehaviour
         else if (isLaunching)
         {
             isLaunching = false;
-            Debug.Log("Accélération terminée.");
+
         }
     }
 }

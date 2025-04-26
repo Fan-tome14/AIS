@@ -15,7 +15,7 @@ public class ClouManager : MonoBehaviour
     {
         if (Clou.estFini && Clou2.estFini && Clou3.estFini && Clou4.estFini)
         {
-            isDone = true; // Le panneau est réparé
+            isDone = true; // Le panneau est rÃ©parÃ©
             panneauAnimator.SetTrigger("LancerAnimation");
         }
     }

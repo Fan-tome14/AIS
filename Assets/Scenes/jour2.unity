@@ -4484,28 +4484,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!64 &213374576
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1609118074}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -1173257167285198723, guid: ffd4e9c491924494a83874c4a5b69c1e, type: 3}
 --- !u!64 &215288561
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6822,7 +6800,7 @@ Transform:
   m_GameObject: {fileID: 357314367}
   serializedVersion: 2
   m_LocalRotation: {x: -1.1641532e-10, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.334, y: -0.054, z: -0.254}
+  m_LocalPosition: {x: -0.3346, y: -0.0524, z: -0.2539}
   m_LocalScale: {x: 0.20000002, y: 0.20000002, z: 0.20000002}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -21822,6 +21800,7 @@ MonoBehaviour:
   scriptButtonGreen: {fileID: 1998844578}
   CommunPanneauSolaire: {fileID: 0}
   GameController: {fileID: 0}
+  ClouManager: {fileID: 0}
 --- !u!64 &1147478311
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -24541,7 +24520,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 22
+  m_text: 7
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -25805,7 +25784,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fee974eaab3e3ba408ac86d9429cbaa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource2: {fileID: 0}
   canvas: {fileID: 687009032}
   casqueVRSCRIPT: {fileID: 1457364645}
   isPressed: 0
@@ -25866,7 +25844,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 22
+  m_text: 7
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -26170,8 +26148,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e772f67b26f9b834ea8fa5f67af1454b, type: 3}
-  m_Resource: {fileID: 8300000, guid: e772f67b26f9b834ea8fa5f67af1454b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7d8a0c8d4fee39b4d99b791adb7f1257, type: 3}
+  m_Resource: {fileID: 8300000, guid: 7d8a0c8d4fee39b4d99b791adb7f1257, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -32893,6 +32871,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 8953498546025746499, guid: ffd4e9c491924494a83874c4a5b69c1e, type: 3}
+    - {fileID: -8885539827088483541, guid: ffd4e9c491924494a83874c4a5b69c1e, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ffd4e9c491924494a83874c4a5b69c1e, type: 3}
@@ -35841,9 +35820,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5928807969927194588, guid: ffd4e9c491924494a83874c4a5b69c1e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1105569547}
-    - targetCorrespondingSourceObject: {fileID: -8885539827088483541, guid: ffd4e9c491924494a83874c4a5b69c1e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 213374576}
     - targetCorrespondingSourceObject: {fileID: 1964601337540781086, guid: ffd4e9c491924494a83874c4a5b69c1e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1140501909}
@@ -38112,11 +38088,6 @@ GameObject:
 --- !u!1 &1609118073 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1964601337540781086, guid: ffd4e9c491924494a83874c4a5b69c1e, type: 3}
-  m_PrefabInstance: {fileID: 1609117789}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1609118074 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -8885539827088483541, guid: ffd4e9c491924494a83874c4a5b69c1e, type: 3}
   m_PrefabInstance: {fileID: 1609117789}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1609118075 stripped
@@ -50564,7 +50535,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 22
+  m_text: 7
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -51501,12 +51472,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33056a4975726fb45b2199e8e04d1ad2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundbutton: {fileID: 0}
   scriptMiseEnCommunFuite: {fileID: 863176715}
   scriptMiseEnCommun: {fileID: 2078068430}
+  scriptCheckMissions: {fileID: 1146560877}
   alarmSystem: {fileID: 449693585}
   VoixTrigger: {fileID: 2080216154}
-  scriptCheckMissions: {fileID: 1146560877}
 --- !u!1001 &2001872411
 PrefabInstance:
   m_ObjectHideFlags: 0

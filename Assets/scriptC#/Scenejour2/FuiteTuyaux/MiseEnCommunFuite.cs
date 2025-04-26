@@ -7,12 +7,12 @@ public class MiseEnCommunFuite : MonoBehaviour
     public TriggerFuite3 triggerFuite3; // Référence au script TriggerFuite2
     public bool Check=false; 
 
-    // Update is called once per frame
+
     void Update()
     {
         if(triggerFuite1.isTriggered && triggerFuite2.isTriggered&& triggerFuite3.isTriggered)
         {
-            Check = true; // Les deux fusibles sont positionnés
+            Check = true; // Chaque fuite est bouchée
 
         }
     }

@@ -2,7 +2,7 @@
 
 public class RepairZone : MonoBehaviour
 {
-    public SolarPanelRepairManager manager; // à lier dans l'inspecteur
+    public SolarPanelRepairManager manager;
     public string tournevisTag = "Tournevis";
     private bool repaired = false;
 
@@ -54,14 +54,7 @@ public class RepairZone : MonoBehaviour
             {
                 isRepairing = false;
 
-                if (manager != null)
-                {
-                    manager.RegisterRepair();
-                }
-
-                // Tu peux désactiver la vis si tu veux :
-                // gameObject.SetActive(false);
-
+                if (manager != null)manager.RegisterRepair();
                 // Arrêter le son après la réparation
                 repairAudioSource.Stop();
             }
@@ -72,7 +65,7 @@ public class RepairZone : MonoBehaviour
     {
         if (!repaired && other.CompareTag(tournevisTag))
         {
-            Debug.Log($"{gameObject.name} réparée !");
+            // Met a jour le statut de la vis
             repaired = true;
             isRepairing = true;
         }

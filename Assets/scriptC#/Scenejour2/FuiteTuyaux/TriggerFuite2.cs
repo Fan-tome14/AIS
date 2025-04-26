@@ -12,8 +12,8 @@ public class TriggerFuite2 : MonoBehaviour
 
     void Start()
     {
-        Tape.SetActive(false); // Assurez-vous que le GameObject "tape" est désactivé au départ
-        PressurisedSteam.SetActive(true); // Assurez-vous que la fuite de vapeur est activée au départ
+        Tape.SetActive(false); // on désactive le rouleau sur le tube
+        PressurisedSteam.SetActive(true); // On active la fuite de vapeur au départ
     }
 
     private void OnTriggerEnter(Collider other)
@@ -31,7 +31,6 @@ public class TriggerFuite2 : MonoBehaviour
             steamSound.Stop(); // Arrêter le son de la fuite de vapeur
             PressurisedSteam.SetActive(false); // Désactiver la fuite de vapeur
             isTriggered = true; // Marquer le déclencheur comme activé
-            Debug.Log("Escape sequence triggered!");
         }
     }
 }

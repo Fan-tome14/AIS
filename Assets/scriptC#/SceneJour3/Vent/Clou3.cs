@@ -5,7 +5,7 @@ public class Clou3 : MonoBehaviour
     public ClouManager ClouManager;
     public AudioSource sonClou;
     public int coupsRestants = 3;
-    public float enfoncementParCoup = 0.01f;
+    public float enfoncementParCoup = 0.015f;
     public bool estFini = false;
 
     private void OnTriggerEnter(Collider other)

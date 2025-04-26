@@ -3,20 +3,18 @@ using UnityEngine;
 public class SolarPanelRepairManager : MonoBehaviour
 {
     public Animator panneauAnimator;
-    public int totalRepairs = 4; // � ajuster dans l'inspecteur si besoin
+    public int totalRepairs = 4;
     public CommunPanneauSolaire CommunPanneauSolaire;
     private int currentRepairs = 0;
-    public bool isRepaired = false; // Indique si le panneau est r�par� ou non
+    public bool isRepaired = false;  // indique si le panneau est réparé
 
     public void RegisterRepair()
     {
-        currentRepairs++;
-        Debug.Log($"R�paration enregistr�e : {currentRepairs}/{totalRepairs}");
-
+        currentRepairs++; // Incrémenter le nombre de réparations effectuées
         if (currentRepairs >= totalRepairs)
         {
-            isRepaired = true; // Le panneau est r�par�
-            Debug.Log("Toutes les r�parations sont faites, ouverture du panneau !");
+            isRepaired = true; // Le panneau est réparé
+            // lancer l'animation d'ouverture du panneau puis vérifier l'état du panneau solaire
             panneauAnimator.SetTrigger("Open");
             CommunPanneauSolaire.CheckPanneauSolaire(); 
         }

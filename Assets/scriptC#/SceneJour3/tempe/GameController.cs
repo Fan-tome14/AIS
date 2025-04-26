@@ -5,7 +5,7 @@ public class GameController : MonoBehaviour
 {
     public ThermometerController[] thermometers;
     public CheckMissionsGlobal CheckMissionsGlobal; // Référence au script de vérification des missions
-    public AudioSource successSound; // 🔊 Son à jouer quand c’est vert
+    public AudioSource successSound; // Son à jouer quand c’est vert
 
     public bool hasPlayedSound = false; // Pour ne pas jouer le son plusieurs fois
 
@@ -31,31 +31,22 @@ public class GameController : MonoBehaviour
         {
             total += thermo.currentTemp;
         }
-
-        Debug.Log("🌡️ Température totale : " + total);
-
+        // Changer la couleur de fond en fonction de la température totale
+        // Si la somme est égale à 21, on passe au vert, sinon rouge
         bool shouldBeGreen = (total == 21);
         Color targetColor = shouldBeGreen ? Color.green : Color.red;
 
+        // Mettre à jour la couleur de fond de chaque thermomètre
         foreach (var thermo in thermometers)
         {
-            if (thermo.backgroundImage != null)
-            {
-                thermo.backgroundImage.color = targetColor;
-            }
+            if (thermo.backgroundImage != null)thermo.backgroundImage.color = targetColor;
         }
-        if(!shouldBeGreen)
-        {
-            CheckMissionsGlobal.monCheckMark1.isOn = false;
-        }
+        if(!shouldBeGreen)CheckMissionsGlobal.monCheckMark1.isOn = false;
 
-        // 🎵 Joue le son quand ça devient vert
+        // Joue le son quand ça devient vert
         if (shouldBeGreen && !hasPlayedSound)
         {
-            if (successSound != null)
-            {
-                successSound.Play();
-            }
+            if (successSound != null)successSound.Play();
             hasPlayedSound = true;
         }
         else if (!shouldBeGreen)

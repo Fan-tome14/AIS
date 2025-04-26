@@ -7,15 +7,9 @@ public class VentilateurControl : MonoBehaviour
     public UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabInteractable1;
     private int clousRestants = 4;
 
-    private void OnEnable()
-    {
-        Clou.OnClouEnleve += EnleverUnClou;
-    }
+    private void OnEnable(){Clou.OnClouEnleve += EnleverUnClou;}
 
-    private void OnDisable()
-    {
-        Clou.OnClouEnleve -= EnleverUnClou;
-    }
+    private void OnDisable(){Clou.OnClouEnleve -= EnleverUnClou;}
 
     private void Start()
     {
@@ -25,8 +19,8 @@ public class VentilateurControl : MonoBehaviour
             grabInteractable1 = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
         }
 
-        grabInteractable.enabled = false; // pas grabbable au d�but
-        grabInteractable1.enabled = false; // pas grabbable au d�but
+        grabInteractable.enabled = false; // pas grabbable au début
+        grabInteractable1.enabled = false; // pas grabbable au début
     }
 
     private void EnleverUnClou()
@@ -35,6 +29,7 @@ public class VentilateurControl : MonoBehaviour
 
         if (clousRestants <= 0)
         {
+            // Si tous les clous sont enlevés, on active le grab interactable
             grabInteractable.enabled = true;
             grabInteractable1.enabled = true;
         }

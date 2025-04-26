@@ -24,27 +24,22 @@ public class VRCanvasController : MonoBehaviour
 
     void Start()
     {
+        // On cache le texte au début
         messageText.gameObject.SetActive(false);
-
-        // Assurez-vous que les lumières d'alarme sont éteintes au début
-        foreach (Light light in alarmLights)
-        {
-            light.enabled = false;
-        }
+        // On vérifie que chaque light d'alarme est bien désactivée
+        foreach (Light light in alarmLights)light.enabled = false;
     }
 
     public void finishDay(){
+        // On vérifie que le joueur a bien terminé toutes les missions avant de passer au jour suivant 
+        // Si le joueur n'a pas terminé toutes les missions, on joue un son et on ne fait rien
         if (!CheckMissionsGlobal.finishedday)
         {
-            Debug.Log("🚫 La journée n'est pas encore terminée !");
             pasPret.Play();
             return;
         }
-
-        Debug.Log("✅ La journée est terminée, on peut aller se coucher !");
         audioSource.Play();
         StartCoroutine(FadeToDark());
-        Debug.Log("Nombre de jours : " + numjours);
     }
 
     IEnumerator FadeToDark()
@@ -62,8 +57,10 @@ public class VRCanvasController : MonoBehaviour
         {
             SceneManager.LoadScene("fin");
         }
+        // on modifie le texte du message pour indiquer le jour suivant et on l'affiche
         messageText.text = "Jour " + numjours;
         messageText.gameObject.SetActive(true);
+        CheckMissionsGlobal.finishedday = false;
         SceneManager.LoadScene("jour" + numjours);
     }
 }

@@ -17,10 +17,10 @@ public class PositionningFusible : MonoBehaviour
         }
         if (other.CompareTag("fuse"))
         {
+            enPosition = true; // Met à jour l'état du fusible
             // Repositionne le fusible
             other.transform.position = positionFinale.position;
             other.transform.rotation = positionFinale.rotation;
-            enPosition = true; // Met à jour l'état du fusible
             var grabInteractable = other.GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
             if (grabInteractable != null)
             {

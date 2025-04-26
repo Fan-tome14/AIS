@@ -4,7 +4,6 @@ using System.Collections;
 
 public class AfficheMission : MonoBehaviour
 {
-    public AudioSource audioSource2;
     public GameObject canvas;
     public EquiperCasqueVR casqueVRSCRIPT;
     public bool isPressed = false;
@@ -30,40 +29,15 @@ public class AfficheMission : MonoBehaviour
         if (grabInteractable != null)
         {
             grabInteractable.selectEntered.AddListener(OnButtonPressed);
-            grabInteractable.hoverEntered.AddListener(OnHoverEntered);
         }
-
-
-
-        if (canvas != null)
-            canvas.SetActive(false);
+        if (canvas != null)canvas.SetActive(false); // on force le canvas à être désactivé au début
     }
 
     private void OnButtonPressed(SelectEnterEventArgs args)
     {
-        if (isPressed) return;
-
-        isPressed = true;
-
-
-        if (audioSource2 != null) audioSource2.Play();
-        else Debug.LogWarning("🔇 Aucun audioSource2 assigné !");
-
-        if (canvas != null) canvas.SetActive(true);
-    }
-
-
-    public void setGrabbable(bool grabbable)
-    {
-        if (grabInteractable != null)
-        {
-            grabInteractable.enabled = grabbable;
-            Debug.Log(grabbable ? "🔵 est maintenant attrapable." : "🔴 Le bouton n'est plus attrapable.");
-        }
-    }
-
-    private void OnHoverEntered(HoverEnterEventArgs args)
-    {
-        Debug.Log("🟡 Hover sur le bouton !");
+        if (isPressed) return; // Si le bouton est déjà pressé, on ne fait rien
+        
+        isPressed = true; // Sinon marque le bouton comme pressé
+        if (canvas != null) canvas.SetActive(true); // Et affiche le canvas des missions
     }
 }

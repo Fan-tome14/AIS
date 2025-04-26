@@ -4,9 +4,9 @@ using System.Collections;
 
 public class YellowButton : MonoBehaviour
 {
-    public Transform porte; // Glisse la porte ici depuis l'inspecteur
+    public Transform porte; 
     public EquiperCasqueVR scriptCasqueVR; // Référence au script EquiperCasqueVR
-    public AudioSource VoixTrigger; // Son de la porte
+    public AudioSource VoixTrigger; 
 
 
     private UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabInteractable;
@@ -22,16 +22,13 @@ public class YellowButton : MonoBehaviour
 
     private void OnGrab(SelectEnterEventArgs args)
     {
+        // On vérifie que le joueur a équiper le casque sinon on ne fait rien
         if (scriptCasqueVR != null && !scriptCasqueVR.estEquipe)
         {
             VoixTrigger.Play();
             return;
         }
-        if (porte != null)
-        {
-            Debug.Log("Grab détecté ! Démarrage de l'ouverture animée...");
-            StartCoroutine(TransitionPorte());
-        }
+        if (porte != null) StartCoroutine(TransitionPorte());
     }
 
     private IEnumerator TransitionPorte()
