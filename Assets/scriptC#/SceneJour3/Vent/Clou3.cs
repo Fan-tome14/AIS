@@ -14,7 +14,7 @@ public class Clou3 : MonoBehaviour
         {
             coupsRestants--;
             sonClou.Play();
-            transform.position -= new Vector3(enfoncementParCoup, 0, 0);
+            transform.position -= new Vector3(-enfoncementParCoup, 0, 0);
 
             if (coupsRestants == 0 && !estFini)
             {

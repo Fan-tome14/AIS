@@ -53,7 +53,7 @@ public class CheckMissionsGlobal : MonoBehaviour
         {
             missionsJour[0].text = "Régler la température du vaisseau dans la salle des machines";
             missionsJour[1].text = "Viser les boulons des 4 plaques en dehors du vaisseau  ("+CommunPanneauSolaire.repairedCount+"/4)";
-            missionsJour[2].text = "Changer le ventilateur du téléscope par le nouveau";
+            missionsJour[2].text = "Remplacer le ventilateur du téléscope par le nouveau";
         }
 
         // Affecter les textes aux checkmarks
