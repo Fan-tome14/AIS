@@ -1519,9 +1519,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7545296495857058878, guid: c77fa25e8b7cdd145a3108ffcfc7ba37, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1613359640}
-    - targetCorrespondingSourceObject: {fileID: 7545296495857058878, guid: c77fa25e8b7cdd145a3108ffcfc7ba37, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1613359639}
     - targetCorrespondingSourceObject: {fileID: 9178654614274383202, guid: c77fa25e8b7cdd145a3108ffcfc7ba37, type: 3}
       insertIndex: -1
@@ -1709,21 +1706,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9f70bd044430514399b226465253782, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserPrefab: {fileID: 3507816687603366037, guid: 13e3ae62819607142b16d2aa24a1d3e2, type: 3}
-  shootOrigin: {fileID: 838528934}
-  shootForce: 20
-  shootAction:
-    m_UseReference: 0
-    m_Action:
-      m_Name: Shoot
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: ced53417-8829-4a8a-a850-007b02532851
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: 0}
 --- !u!1 &558638210 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8009132961463385962, guid: 871366b5c1a02644aaf85a6a1f8baf2a, type: 3}
@@ -3096,18 +3078,6 @@ MonoBehaviour:
   m_DefaultActionMap: XRI Left
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 543655928}
---- !u!114 &1613359640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 543655927}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdf9c81b68fc89145b7815185dcd13b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1624514710 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1760714182489039777, guid: 871366b5c1a02644aaf85a6a1f8baf2a, type: 3}
