@@ -33,6 +33,8 @@ public class PositionningFusible : MonoBehaviour
                 rb.isKinematic = true;
                 rb.useGravity = false;
             }
+            var bx = this.GetComponent<BoxCollider>();
+            bx.isTrigger = false;
             scriptMiseEnCommun.CheckFusible();
         }
     }

@@ -36,17 +36,20 @@ public class GreenButton : MonoBehaviour
             return;
         }
 
-        if (alarmSystem != null)
-            alarmSystem.StopAlarm();
+        if (scriptMiseEnCommunFuite != null && scriptMiseEnCommunFuite.Check && scriptMiseEnCommun != null && scriptMiseEnCommun.Check)
+        {
+            if (alarmSystem != null)
+                alarmSystem.StopAlarm();
 
-        // Animation d'appui visuel du bouton (modification de la position)
-        StartCoroutine(AnimateButtonPress());
+            // Animation d'appui visuel du bouton (modification de la position)
+            StartCoroutine(AnimateButtonPress());
 
-        // Alarme désactivée
-        alarme = true;
+            // Alarme désactivée
+            alarme = true;
 
-        // Appelle la fonction de validation des missions
-        scriptCheckMissions.ValiderMissions();
+            // Appelle la fonction de validation des missions
+            scriptCheckMissions.ValiderMissions();
+        }
     }
 
     private IEnumerator AnimateButtonPress()
