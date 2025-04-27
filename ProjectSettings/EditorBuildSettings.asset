@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 55daccc09a3b69647bbab145b54a3ab3
   - enabled: 1
+    path: Assets/Scenes/jour3.unity
+    guid: 8af9c95e66466da4d80ea9e252a2724b
+  - enabled: 1
     path: Assets/Scenes/jour2.unity
     guid: f676907d21eff3e4795a7af208693198
   - enabled: 1
@@ -20,9 +23,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/decolage.unity
     guid: 178e12ac50227ac488aea216d3c8b337
-  - enabled: 1
-    path: Assets/Scenes/jour3.unity
-    guid: 8af9c95e66466da4d80ea9e252a2724b
   - enabled: 1
     path: Assets/Scenes/fin.unity
     guid: 9307c1f74ad802842acf116da48f1883
