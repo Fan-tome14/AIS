@@ -1,56 +1,59 @@
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
-using System.Collections;
 
 public class LevierScript : MonoBehaviour
 {
     public AudioSource soundbutton;
-    public GameObject targetObject; // Le GameObject que on va déplacer
-    public float moveSpeed = 3f;    // Vitesse de déplacement
-    public AfficheMission AfficheMission; // Référence au script RedButton
+    public GameObject targetObject;
+    public float moveSpeed = 3f;
+    public AfficheMission AfficheMission;
     public AudioSource VoixTrigger;
-    public CheckMissionsGlobal CheckMissionsGlobal; // Référence au script CheckMissions
+    public CheckMissionsGlobal CheckMissionsGlobal;
 
     private UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabInteractable;
-    private bool isMoving = false;  // Détermine si le vaisseau doit bouger ou non
+    private bool isMoving = false;
     public bool estActiver { get { return isMoving; } private set { isMoving = value; } }
-    private Quaternion initialRotation; // Rotation initiale du levier
+
+    private bool isTilted = false; // Nouveau : état bascule (+40 ou -40)
+
+    private const float tiltAmount = 40f; // Rotation en degrés
 
     private void Start()
     {
         grabInteractable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
-    
-        if (grabInteractable != null)grabInteractable.selectEntered.AddListener(OnButtonPressed);
-        else Debug.LogError("⚠️ XRGrabInteractable manquant sur le levier !");
-        
-        initialRotation = transform.localRotation; // Enregistre la rotation initiale du levier
+
+        if (grabInteractable != null)
+            grabInteractable.selectEntered.AddListener(OnButtonPressed);
+        else
+            Debug.LogError("⚠️ XRGrabInteractable manquant sur le levier !");
     }
 
     private void Update()
     {
-        // Si le vaisseau doit bouger, on le déplace
-        if (isMoving) targetObject.transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
+        if (isMoving)
+        {
+            targetObject.transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
+        }
     }
 
     private void OnButtonPressed(SelectEnterEventArgs args)
     {
-        // si les missions n'ont été affichées on ne fait rien
-        if(AfficheMission != null && !AfficheMission.isPressed)
+        if (AfficheMission != null && !AfficheMission.isPressed)
         {
             VoixTrigger.Play();
             return;
         }
-        // 🔊 Lancer le son si la source audio est définie
-        if (soundbutton != null)soundbutton.Play(); 
-        else Debug.LogWarning("🔇 Aucun soundbutton assigné !");
-        
-        // déplacer le levier
-        if(transform.localRotation != initialRotation)transform.localRotation = initialRotation; // Réinitialiser la rotation du levier
-        else  transform.localRotation = Quaternion.Euler(40, 0.018f, 0.002f); // Sinon Déplacer le levier vers le bas
- 
-        // Commencer à déplacer le vaisseau
-        isMoving = true;
-        CheckMissionsGlobal.ValiderMissions(); 
 
+        if (soundbutton != null) soundbutton.Play();
+        else Debug.LogWarning("🔇 Aucun soundbutton assigné !");
+
+        float direction = isTilted ? -tiltAmount : tiltAmount; // Si incliné ➔ -40 sinon +40
+
+        transform.Rotate(direction, 0f, 0f, Space.Self); // ➡️ Rotation RELATIVE sur X
+
+        isTilted = !isTilted; // On inverse l'état (bascule)
+
+        isMoving = true;
+        CheckMissionsGlobal.ValiderMissions();
     }
 }

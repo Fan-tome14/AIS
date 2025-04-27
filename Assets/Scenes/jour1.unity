@@ -23655,21 +23655,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9f70bd044430514399b226465253782, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserPrefab: {fileID: 3507816687603366037, guid: 13e3ae62819607142b16d2aa24a1d3e2, type: 3}
-  shootOrigin: {fileID: 674281985}
-  shootForce: 20
-  shootAction:
-    m_UseReference: 0
-    m_Action:
-      m_Name: Shoot
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: ced53417-8829-4a8a-a850-007b02532851
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: 0}
 --- !u!1 &1127337841 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1089055034361042636, guid: ffd4e9c491924494a83874c4a5b69c1e, type: 3}
@@ -45765,15 +45750,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 98c533b7c9522ad4fb767eaffd096de3, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.3
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 98c533b7c9522ad4fb767eaffd096de3, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.3
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 98c533b7c9522ad4fb767eaffd096de3, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.3
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 98c533b7c9522ad4fb767eaffd096de3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -45781,7 +45766,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 98c533b7c9522ad4fb767eaffd096de3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.1447
+      value: -0.1498
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 98c533b7c9522ad4fb767eaffd096de3, type: 3}
       propertyPath: m_LocalPosition.z
