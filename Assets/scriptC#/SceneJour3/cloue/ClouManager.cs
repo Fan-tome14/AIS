@@ -8,8 +8,10 @@ public class ClouManager : MonoBehaviour
     public Clou3 Clou4;
     public Animator panneauAnimator;
 
+    public AudioSource audioSource; // Ajoute la référence à l'AudioSource
+    public AudioClip audioClip;     // Ajoute la référence à l'AudioClip à jouer
 
-    public bool isDone = false; // Indique si les vis du panneau sont placer
+    public bool isDone = false; // Indique si les vis du panneau sont placées
 
     public void CheckClou()
     {
@@ -17,9 +19,12 @@ public class ClouManager : MonoBehaviour
         {
             isDone = true; // Le panneau est réparé
             panneauAnimator.SetTrigger("LancerAnimation");
+
+            // Lancer l'audio
+            if (audioSource != null && audioClip != null)
+            {
+                audioSource.PlayOneShot(audioClip); // Joue l'audio
+            }
         }
     }
-
 }
-
-
