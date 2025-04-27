@@ -46,8 +46,8 @@ public class CheckMissionsGlobal : MonoBehaviour
         }
         else if (VRCanvasController.numjours == 2)
         {
-            missionsJour[0].text = "Reparer les fuites de vapeur";
-            missionsJour[1].text = "Retrouver les fusibles";
+            missionsJour[0].text = "Reparer les fuites de vapeur("+scriptMiseEnCommunFuite.fixedCount+"/3)";
+            missionsJour[1].text = "Retrouver les fusibles("+scriptMiseEnCommun.nbFusible+"/2)";
             missionsJour[2].text = "Eteindre l alarme";
         }else if(VRCanvasController.numjours == 3)
         {
@@ -69,6 +69,15 @@ public class CheckMissionsGlobal : MonoBehaviour
 
     void Update()
     {
+        if(VRCanvasController.numjours ==2 && scriptMiseEnCommunFuite != null && scriptMiseEnCommun != null)
+        {
+            string missionText = "Retrouver les fusibles("+scriptMiseEnCommun.nbFusible+"/2)";
+            missionsJour[1].text = missionText;
+            texteCheckMark2.text = missionText;
+            missionText = "Reparer les fuites de vapeur("+scriptMiseEnCommunFuite.fixedCount+"/3)";
+            missionsJour[0].text = missionText;
+            texteCheckMark1.text = missionText;
+        }
         if (VRCanvasController.numjours == 3 && CommunPanneauSolaire != null)
         {
             CommunPanneauSolaire.CheckPanneauSolaire(); // Met à jour repairedCount

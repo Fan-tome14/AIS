@@ -5,6 +5,7 @@ public class PositionningFusible : MonoBehaviour
     public Transform positionFinale;
     public AudioSource VoixTrigger;
     public AfficheMission AfficheMission; // Référence au script RedButton
+    public MiseEnCommun scriptMiseEnCommun;
 
     public bool enPosition = false; // Variable pour savoir si le fusible est positionné
     private void OnTriggerEnter(Collider other)
@@ -32,6 +33,7 @@ public class PositionningFusible : MonoBehaviour
                 rb.isKinematic = true;
                 rb.useGravity = false;
             }
+            scriptMiseEnCommun.CheckFusible();
         }
     }
 }

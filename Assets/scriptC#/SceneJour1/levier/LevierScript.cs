@@ -46,7 +46,7 @@ public class LevierScript : MonoBehaviour
         
         // déplacer le levier
         if(transform.localRotation != initialRotation)transform.localRotation = initialRotation; // Réinitialiser la rotation du levier
-        else  transform.localRotation = Quaternion.Euler(-40, 0, 0); // Sinon Déplacer le levier vers le bas
+        else  transform.localRotation = Quaternion.Euler(40, 0.018f, 0.002f); // Sinon Déplacer le levier vers le bas
  
         // Commencer à déplacer le vaisseau
         isMoving = true;

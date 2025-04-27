@@ -9,6 +9,7 @@ public class TriggerFuite3 : MonoBehaviour
     public GameObject groundFog;
     public AudioSource VoixTrigger;
     public AfficheMission AfficheMission;
+    public MiseEnCommunFuite scriptMiseEnCommunFuite;
 
     void Start()
     {
@@ -31,6 +32,7 @@ public class TriggerFuite3 : MonoBehaviour
             steamSound.Stop(); // Arrêter le son de la fuite de vapeur
             PressurisedSteam.SetActive(false); // Désactiver la fuite de vapeur
             isTriggered = true; // Marquer le déclencheur comme activé
+            scriptMiseEnCommunFuite.CheckFuite(); // Appeler la méthode CheckFuite du script MiseEnCommunFuite
         }
     }
 }
