@@ -117,6 +117,7 @@
     <Compile Include="Assets\scriptC#\general\lit\VRCanvasController.cs" />
     <Compile Include="Assets\scriptC#\SceneJour3\tempe\ThermometerController.cs" />
     <Compile Include="Assets\scriptC#\SceneJour3\solar\CommunPanneauSolaire.cs" />
+    <Compile Include="Assets\scriptC#\SceneJour3\CasqueObg.cs" />
     <Compile Include="Assets\scriptC#\SceneDECOLLAGE\SceneChanged.cs" />
     <Compile Include="Assets\scriptC#\Scenejour2\fusible\MiseEnCommun.cs" />
     <Compile Include="Assets\scriptC#\SceneJour3\cloue\zoneCloue.cs" />

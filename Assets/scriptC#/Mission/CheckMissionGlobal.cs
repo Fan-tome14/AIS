@@ -56,9 +56,9 @@ public class CheckMissionsGlobal : MonoBehaviour
         else if (VRCanvasController.numjours == 3)
         {
             missionsJour[0].text = "Régler la température du vaisseau dans la salle des machines";
-            missionsJour[1].text = $"Reserrer les boulons des 4 plaques en dehors du vaisseau ({CommunPanneauSolaire.repairedCount}/4)";
+            missionsJour[1].text = $"Reserrer les boulons des 4 plaques en dehors du vaisseau a l'aide de la clé a molette({CommunPanneauSolaire.repairedCount}/4)";
             missionsJour[2].text = "Remplacer le ventilateur du satellite";
-            texteCheckMark4.text = $"Étape {etape} : Retirer les clous du ventilateur ({scriptVentilateurControl.ClousRetirer()}/4)";
+            texteCheckMark4.text = $"Étape {etape} : Retirer les clous du ventilateur a l'aide de la pince ({scriptVentilateurControl.ClousRetirer()}/4)";
         }
 
         texteCheckMark1.text = missionsJour[0].text;
@@ -85,14 +85,14 @@ public class CheckMissionsGlobal : MonoBehaviour
         {
             CommunPanneauSolaire.CheckPanneauSolaire();
 
-            missionsJour[1].text = $"Viser les boulons des 4 plaques en dehors du vaisseau ({CommunPanneauSolaire.repairedCount}/4)";
+            missionsJour[1].text = $"Viser les boulons des 4 plaques en dehors du vaisseau a l'aide de la clé a molette({CommunPanneauSolaire.repairedCount}/4)";
             texteCheckMark2.text = missionsJour[1].text;
 
             if (scriptVentilateurControl != null && scriptZone != null && ClouManager != null)
             {
                 if (etape == 1)
                 {
-                    texteCheckMark4.text = $"Étape {etape} : Retirer les clous du ventilateur ({scriptVentilateurControl.ClousRetirer()}/4)";
+                    texteCheckMark4.text = $"Étape {etape} : Retirer les clous du ventilateur a l'aide de la pince ({scriptVentilateurControl.ClousRetirer()}/4)";
 
                     if (scriptVentilateurControl.ClousRestants() == 0)
                     {
