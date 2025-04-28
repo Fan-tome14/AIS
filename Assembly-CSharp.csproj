@@ -75,6 +75,7 @@
     <Compile Include="Assets\scriptC#\SceneJour3\solar\RepairZone.cs" />
     <Compile Include="Assets\UnityTechnologies\ParticlePack\EffectExamples\Misc Effects\Scripts\SpawnEffect.cs" />
     <Compile Include="Assets\scriptC#\Scenejour2\FuiteTuyaux\TriggerFuite1.cs" />
+    <Compile Include="Assets\scriptC#\tuto\skipTuto.cs" />
     <Compile Include="Assets\scriptC#\general\AfficheMission.cs" />
     <Compile Include="Assets\scriptC#\SceneJour3\Button\YellowButton.cs" />
     <Compile Include="Assets\scriptC#\Scenejour2\alarme\AlarmSystem.cs" />
