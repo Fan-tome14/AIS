@@ -8,7 +8,7 @@ using System.Collections.Generic;
 
 public class VRCanvasController : MonoBehaviour
 {
-    public static int numjours = 3;
+    public static int numjours = 1;
     public Image fadeImage;
     public TextMeshProUGUI messageText;
     public float fadeDuration = 2f;

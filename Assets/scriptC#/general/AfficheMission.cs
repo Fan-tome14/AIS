@@ -5,7 +5,6 @@ using System.Collections;
 public class AfficheMission : MonoBehaviour
 {
     public GameObject canvas;
-    public EquiperCasqueVR casqueVRSCRIPT;
     public bool isPressed = false;
 
     private UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabInteractable;
