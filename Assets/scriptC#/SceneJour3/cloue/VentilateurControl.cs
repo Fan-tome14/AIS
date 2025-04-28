@@ -42,6 +42,9 @@ public class VentilateurControl : MonoBehaviour
             // Si tous les clous sont enlevés, on active le grab interactable
             grabInteractable.enabled = true;
             grabInteractable1.enabled = true;
+            var rb = GetComponent<Rigidbody>();
+            rb.isKinematic = false; // Rendre le Rigidbody non cinématique pour permettre la gravité
+            rb.useGravity = true; // Activer la gravité sur le Rigidbody
         }
     }
 }
