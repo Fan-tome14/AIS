@@ -18,5 +18,6 @@ __MACOSX/
 # Fichiers de sauvegarde
 *.bak
 *.backup
+/assets/video
 *.tmp
 UserSettings/EditorUserSettings.asset
