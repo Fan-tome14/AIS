@@ -11,6 +11,7 @@ public class CheckMissionsGlobal : MonoBehaviour
     public TextMeshProUGUI texteCheckMark1;
     public TextMeshProUGUI texteCheckMark2;
     public TextMeshProUGUI texteCheckMark3;
+    public TextMeshProUGUI texteCheckMark4;
     public TextMeshProUGUI[] missionsJour = new TextMeshProUGUI[3];
 
     public AudioSource terminer;
@@ -24,44 +25,46 @@ public class CheckMissionsGlobal : MonoBehaviour
     public MiseEnCommun scriptMiseEnCommun;
     public GreenButton scriptButtonGreen;
 
-    //Jour 3
+    // Jour 3
     public CommunPanneauSolaire CommunPanneauSolaire;
     public GameController GameController;
     public ClouManager ClouManager;
+    public VentilateurControl scriptVentilateurControl;
+    public zone scriptZone;
 
+    private int etape = 1;
     public static bool finishedday = false;
     public static bool dejaValider = false;
 
     void Start()
     {
-        // Réinitialisation à chaque jour
         finishedday = false;
         dejaValider = false;
-        // Init missions selon le jour
+
         if (VRCanvasController.numjours == 1)
         {
-            missionsJour[0].text = "Equiper le casque";
+            missionsJour[0].text = "Équiper le casque";
             missionsJour[1].text = "Reposer le casque";
-            missionsJour[2].text = "Demarrer le vaisseau";
+            missionsJour[2].text = "Démarrer le vaisseau";
         }
         else if (VRCanvasController.numjours == 2)
         {
-            missionsJour[0].text = "Reparer les fuites de vapeur("+scriptMiseEnCommunFuite.fixedCount+"/3)";
-            missionsJour[1].text = "Retrouver les fusibles("+scriptMiseEnCommun.nbFusible+"/2)";
-            missionsJour[2].text = "Eteindre l alarme";
-        }else if(VRCanvasController.numjours == 3)
+            missionsJour[0].text = $"Réparer les fuites de vapeur ({scriptMiseEnCommunFuite.fixedCount}/3)";
+            missionsJour[1].text = $"Retrouver les fusibles ({scriptMiseEnCommun.nbFusible}/2)";
+            missionsJour[2].text = "Éteindre l'alarme";
+        }
+        else if (VRCanvasController.numjours == 3)
         {
             missionsJour[0].text = "Régler la température du vaisseau dans la salle des machines";
-            missionsJour[1].text = "Viser les boulons des 4 plaques en dehors du vaisseau  ("+CommunPanneauSolaire.repairedCount+"/4)";
-            missionsJour[2].text = "Remplacer le ventilateur du téléscope par le nouveau";
+            missionsJour[1].text = $"Reserrer les boulons des 4 plaques en dehors du vaisseau ({CommunPanneauSolaire.repairedCount}/4)";
+            missionsJour[2].text = "Remplacer le ventilateur du satellite";
+            texteCheckMark4.text = $"Étape {etape} : Retirer les clous du ventilateur ({scriptVentilateurControl.ClousRetirer()}/4)";
         }
 
-        // Affecter les textes aux checkmarks
         texteCheckMark1.text = missionsJour[0].text;
         texteCheckMark2.text = missionsJour[1].text;
         texteCheckMark3.text = missionsJour[2].text;
 
-        // Désactiver les cases à cocher
         monCheckMark1.isOn = false;
         monCheckMark2.isOn = false;
         monCheckMark3.isOn = false;
@@ -69,25 +72,53 @@ public class CheckMissionsGlobal : MonoBehaviour
 
     void Update()
     {
-        if(VRCanvasController.numjours ==2 && scriptMiseEnCommunFuite != null && scriptMiseEnCommun != null)
+        if (VRCanvasController.numjours == 2 && scriptMiseEnCommunFuite != null && scriptMiseEnCommun != null)
         {
-            string missionText = "Retrouver les fusibles("+scriptMiseEnCommun.nbFusible+"/2)";
-            missionsJour[1].text = missionText;
-            texteCheckMark2.text = missionText;
-            missionText = "Reparer les fuites de vapeur("+scriptMiseEnCommunFuite.fixedCount+"/3)";
-            missionsJour[0].text = missionText;
-            texteCheckMark1.text = missionText;
+            missionsJour[1].text = $"Retrouver les fusibles ({scriptMiseEnCommun.nbFusible}/2)";
+            texteCheckMark2.text = missionsJour[1].text;
+
+            missionsJour[0].text = $"Réparer les fuites de vapeur ({scriptMiseEnCommunFuite.fixedCount}/3)";
+            texteCheckMark1.text = missionsJour[0].text;
         }
+
         if (VRCanvasController.numjours == 3 && CommunPanneauSolaire != null)
         {
-            CommunPanneauSolaire.CheckPanneauSolaire(); // Met à jour repairedCount
-            // On met a jour le texte pour indiquer le nombre de panneaux réparés
-            string missionText = "Viser les boulons des 4 plaques en dehors du vaisseau  (" + CommunPanneauSolaire.repairedCount + "/4)";
-            missionsJour[1].text = missionText;
-            texteCheckMark2.text = missionText;
+            CommunPanneauSolaire.CheckPanneauSolaire();
+
+            missionsJour[1].text = $"Viser les boulons des 4 plaques en dehors du vaisseau ({CommunPanneauSolaire.repairedCount}/4)";
+            texteCheckMark2.text = missionsJour[1].text;
+
+            if (scriptVentilateurControl != null && scriptZone != null && ClouManager != null)
+            {
+                if (etape == 1)
+                {
+                    texteCheckMark4.text = $"Étape {etape} : Retirer les clous du ventilateur ({scriptVentilateurControl.ClousRetirer()}/4)";
+
+                    if (scriptVentilateurControl.ClousRestants() == 0)
+                    {
+                        etape++;
+                    }
+                }
+                else if (etape == 2)
+                {
+                    texteCheckMark4.text = $"Étape {etape} : Changer le ventilateur ({scriptZone.GetEnPosition()}/1)";
+
+                    if (scriptZone.GetEnPosition() == 1)
+                    {
+                        etape++;
+                    }
+                }
+                else if (etape == 3)
+                {
+                    texteCheckMark4.text = $"Étape {etape} : Clouter la ventilation avec le marteau ({ClouManager.clousPlacer}/4)";
+                }
+            }
         }
-        if (!dejaValider) ValiderMissions();
+
+        if (!dejaValider)
+            ValiderMissions();
     }
+
 
     public void ValiderMissions()
     {
@@ -104,28 +135,29 @@ public class CheckMissionsGlobal : MonoBehaviour
             m1 = scriptMiseEnCommunFuite.Check;
             m2 = scriptMiseEnCommun.Check;
             m3 = scriptButtonGreen.estActiver;
-        }else if(VRCanvasController.numjours == 3 && CommunPanneauSolaire != null && GameController != null)
+        }
+        else if (VRCanvasController.numjours == 3 && CommunPanneauSolaire != null && GameController != null)
         {
             m1 = GameController.hasPlayedSound;
             m2 = CommunPanneauSolaire.isRepaired;
             m3 = ClouManager.isDone;
         }
-        if (m1) monCheckMark1.isOn = true;
-        if (m2) monCheckMark2.isOn = true;
-        if (m3) monCheckMark3.isOn = true;
 
-        Debug.Log($"État des missions : {m1}, {m2}, {m3}");
+        monCheckMark1.isOn = m1;
+        monCheckMark2.isOn = m2;
+        monCheckMark3.isOn = m3;
 
-        if (m1 && m2 && m3)
+        Debug.Log($"📝 Validation missions : {m1}, {m2}, {m3}");
+
+        if (m1 && m2 && m3 && !dejaValider)
         {
-            // Si toutes les missions sont validées et que ce n'était pas déjà validé
-            // on les coche et on joue le son de validation
-            if (terminer != null && !dejaValider)
-            {
+            if (terminer != null)
                 terminer.Play();
-                dejaValider = true;
-                finishedday = true;
-            }
+
+            dejaValider = true;
+            finishedday = true;
+
+            Debug.Log("✅ Toutes les missions de la journée sont validées !");
         }
     }
 }

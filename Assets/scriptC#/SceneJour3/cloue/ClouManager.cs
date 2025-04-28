@@ -8,22 +8,51 @@ public class ClouManager : MonoBehaviour
     public Clou3 Clou4;
     public Animator panneauAnimator;
 
-    public AudioSource audioSource; // Ajoute la référence à l'AudioSource
-    public AudioClip audioClip;     // Ajoute la référence à l'AudioClip à jouer
+    public AudioSource audioSource;
+    public AudioClip audioClip;
 
-    public bool isDone = false; // Indique si les vis du panneau sont placées
+    public bool isDone = false;
+    public int clousPlacer = 0;
+
+    private bool clou1DéjàPris = false;
+    private bool clou2DéjàPris = false;
+    private bool clou3DéjàPris = false;
+    private bool clou4DéjàPris = false;
 
     public void CheckClou()
     {
-        if (Clou.estFini && Clou2.estFini && Clou3.estFini && Clou4.estFini)
+        if (!clou1DéjàPris && Clou.estFini)
         {
-            isDone = true; // Le panneau est réparé
+            clousPlacer++;
+            clou1DéjàPris = true;
+        }
+
+        if (!clou2DéjàPris && Clou2.estFini)
+        {
+            clousPlacer++;
+            clou2DéjàPris = true;
+        }
+
+        if (!clou3DéjàPris && Clou3.estFini)
+        {
+            clousPlacer++;
+            clou3DéjàPris = true;
+        }
+
+        if (!clou4DéjàPris && Clou4.estFini)
+        {
+            clousPlacer++;
+            clou4DéjàPris = true;
+        }
+
+        if (clousPlacer == 4 && !isDone)
+        {
+            isDone = true;
             panneauAnimator.SetTrigger("LancerAnimation");
 
-            // Lancer l'audio
             if (audioSource != null && audioClip != null)
             {
-                audioSource.PlayOneShot(audioClip); // Joue l'audio
+                audioSource.PlayOneShot(audioClip);
             }
         }
     }

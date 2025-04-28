@@ -6,7 +6,16 @@ public class VentilateurControl : MonoBehaviour
     public UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabInteractable;
     public UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabInteractable1;
     private int clousRestants = 4;
+    private int clousRetirers = 0;
 
+    public int ClousRetirer()
+    { 
+        return clousRetirers; 
+    }
+    public int ClousRestants()
+    { 
+        return clousRestants; 
+    }
     private void OnEnable(){Clou.OnClouEnleve += EnleverUnClou;}
 
     private void OnDisable(){Clou.OnClouEnleve -= EnleverUnClou;}
@@ -26,6 +35,7 @@ public class VentilateurControl : MonoBehaviour
     private void EnleverUnClou()
     {
         clousRestants--;
+        clousRetirers++;
 
         if (clousRestants <= 0)
         {
