@@ -43,6 +43,6 @@ Si vous rencontrez des problèmes, n'hésitez pas à en parler à l'équipe pour
 
 ## Avertissements Importants
 
-* **Scripts Sensibles :** Soyez très prudents lorsque vous modifiez les scripts nommés `checkmission` et `bed`. Changer des choses dans ces scripts pourrait faire que le jeu ne fonctionne plus correctement dès le début. Il est préférable de ne pas les modifier à moins d'être sûr de ce que vous faites.
+* **Scripts Sensibles :** Soyez très prudents lorsque vous modifiez les scripts nommés `checkmission` et `VRCanvaController`. Changer des choses dans ces scripts pourrait faire que le jeu ne fonctionne plus correctement dès le début. Il est préférable de ne pas les modifier à moins d'être sûr de ce que vous faites.
 
 * **Vérification des Importations :** Pour chaque script que vous utilisez dans Unity, assurez-vous que toutes les "importations" nécessaires sont bien connectées directement dans l'éditeur Unity. Les importations sont comme des liens vers d'autres outils ou fonctions dont le script a besoin pour marcher. Si ces liens ne sont pas corrects, le script pourrait ne pas fonctionner comme prévu. Vérifiez bien cela !
